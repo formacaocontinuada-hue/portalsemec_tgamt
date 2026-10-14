@@ -8,11 +8,13 @@ no seu próprio lugar (Apps Script, planilhas) e confere sozinha quem pode usá-
 
 ```
 portalsemec_tgamt/
-├── index.html              página pública (a fazer)
+├── index.html              página pública (visual aprovado no Portal do Codex)
 ├── escola.html             Área da Escola: porta + área de trabalho da unidade
 ├── componentes.html        guia visual das áreas internas (conferência; não é linkada no site)
 ├── componentes-entrada.html guia visual da tela de entrada (conferência)
-├── css/portal.css          estilos únicos do site
+├── css/publico.css         estilos da página pública
+├── css/portal.css          estilos das áreas internas
+├── js/publico.js           menu do celular da página pública
 ├── js/portal.js            menu lateral e cartões de ferramenta
 ├── js/acesso.js            entrada com a conta institucional (mesmo backend da Central)
 ├── js/area-escola.js       estados da porta e identificação da escola
@@ -21,6 +23,7 @@ portalsemec_tgamt/
 └── assets/
     ├── marca/              emblema do Portal, brasões de Tangará e da Educação Indígena, prefeitura, banner
     ├── brasoes/            brasões das escolas (nome do arquivo = identificador da escola)
+    ├── publico/            banners e foto da página pública
     └── mascote/            estados do Tangará usados no site
 ```
 

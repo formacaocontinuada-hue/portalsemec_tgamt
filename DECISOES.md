@@ -40,8 +40,7 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
   emblema do Portal, barra superior com caminho e título, cartões claros com rótulos
   dourados, tela de entrada com o Tangará e o banner de acesso. Fonte Arial.
 - O protótipo antigo (pasta "Portal Semec", jun/2026, rodapé azul com fonte Alice) é legado.
-- As 115 páginas do Portal local foram perdidas com o computador antigo e não serão
-  reconstruídas como protótipo.
+- O Portal completo (115 páginas, branch `padronizacao-visual`, commit 67b1eed) foi reencontrado em 14/10 em `Área de Trabalho\Codex\2026-07-02\files-mentioned-by-the-user-prompt\outputs`. Ele é a fonte para reaproveitar páginas aprovadas, a começar pela página inicial pública.
 - Do CSS da Central (~23.500 linhas) ficou só o que a vitrine usa, com o valor final.
 - Nomes oficiais das unidades vêm de `js/escolas.js` da Central e estão em `dados/escolas.json`.
 - Dados fictícios não entram no repositório.
@@ -49,6 +48,7 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Brasão Haliti Paresi representa a Educação Indígena (`assets/marca/educacao-indigena.webp`) e é usado nas escolas indígenas sem brasão próprio.
 - Área da SEMEC: nenhum sisteminha construído ainda; os cartões aparecem como "Em breve".
 - Área da Escola identifica a unidade pelo login (mesmo Apps Script e mesma autorização da Central). Conta SEMEC vê a Área da Escola com aviso "Visão da SEMEC". Conta sem cadastro vê "Acesso não autorizado" e pode entrar com outra conta.
+- Página inicial pública (14/10): restaurada do Portal do Codex com o mesmo visual. Eventos e Notícias aparecem como "Em breve"; newsletter desativada ("As inscrições ainda não estão abertas"); "Saiba mais" do programa retirado; botão "Área do Servidor" virou "Área da Escola". CSS próprio (`css/publico.css`), só com as regras que a página usa.
 - Ajuda, contato, privacidade e acessibilidade apontam para as páginas da Central até o Portal ter as suas.
 
 ## Pendências
