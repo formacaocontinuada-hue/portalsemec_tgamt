@@ -1,0 +1,251 @@
+{
+  "_leia": "Nomes oficiais das unidades (da Central de Certificados) e o brasão de cada uma. Os brasões da pasta de assets foram gerados ou recebidos dos responsáveis pelas unidades. Escola indígena sem brasão próprio usa o brasão da Educação Indígena; as demais usam o de Tangará da Serra.",
+  "unidades": [
+    {
+      "id": "ESC-000001",
+      "nome": "Departamento de Gestão Pedagógica e Políticas Educacionais - SEMEC",
+      "indigena": false,
+      "brasao": "assets/marca/brasao-tangara.webp"
+    },
+    {
+      "id": "ESC-000002",
+      "nome": "Centro Municipal Agrícola de Ensino Ulisses Guimarães",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-ulisses-guimaraes.webp"
+    },
+    {
+      "id": "ESC-000003",
+      "nome": "Centro Municipal de Ensino Antenor Soares",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-antenor-soares.webp"
+    },
+    {
+      "id": "ESC-000004",
+      "nome": "Centro Municipal de Ensino Atacílio de Souza",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-atacilio-de-souza.webp"
+    },
+    {
+      "id": "ESC-000005",
+      "nome": "Centro Municipal de Ensino Ayrton Senna",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-ayrton-senna.webp"
+    },
+    {
+      "id": "ESC-000006",
+      "nome": "Centro Municipal de Ensino Cecilia Capucho",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-cecilia-capucho.webp"
+    },
+    {
+      "id": "ESC-000007",
+      "nome": "Centro Municipal de Ensino Cecilia Maria Barcellos",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-cecilia-maria-de-barcelos.webp"
+    },
+    {
+      "id": "ESC-000008",
+      "nome": "Centro Municipal de Ensino Décio Burali",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-decio-burali.webp"
+    },
+    {
+      "id": "ESC-000009",
+      "nome": "Centro Municipal de Ensino Diva Martins Junqueira",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-diva-martins-junqueira.webp"
+    },
+    {
+      "id": "ESC-000010",
+      "nome": "Centro Municipal de Ensino Dom Bosco",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-dom-bosco.webp"
+    },
+    {
+      "id": "ESC-000011",
+      "nome": "Centro Municipal de Ensino Dona Mariquinha Tavares",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-dona-mariquinha-tavares.webp"
+    },
+    {
+      "id": "ESC-000012",
+      "nome": "Centro Municipal de Ensino Ernesto Che Guevara",
+      "indigena": false,
+      "brasao": "assets/marca/brasao-tangara.webp"
+    },
+    {
+      "id": "ESC-000013",
+      "nome": "Centro Municipal de Ensino Fábio Diniz Junqueira",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-fabio-diniz-junqueira.webp"
+    },
+    {
+      "id": "ESC-000014",
+      "nome": "Centro Municipal de Ensino Fausto Eugenio Masson",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-fausto-eugenio-masson.webp"
+    },
+    {
+      "id": "ESC-000015",
+      "nome": "Centro Municipal de Ensino Futuro Brilhante",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-futuro-brilhante.webp"
+    },
+    {
+      "id": "ESC-000016",
+      "nome": "Centro Municipal de Ensino Gentila Susin Muraro",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-gentila-susin-muraro.webp"
+    },
+    {
+      "id": "ESC-000017",
+      "nome": "Centro Municipal de Ensino Irma Maris Stella",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-irma-maris-stella.webp"
+    },
+    {
+      "id": "ESC-000018",
+      "nome": "Centro Municipal de Ensino Jesu Pimenta de Souza",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-jesu-pimenta-de-sousa.webp"
+    },
+    {
+      "id": "ESC-000019",
+      "nome": "Centro Municipal de Ensino Joana D'arc",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-joana-darc.webp"
+    },
+    {
+      "id": "ESC-000020",
+      "nome": "Centro Municipal de Ensino Luiz Simões Matias",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-luiz-simoes-matias.webp"
+    },
+    {
+      "id": "ESC-000021",
+      "nome": "Centro Municipal de Ensino Marechal Candido Rondon",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-marechal-candido-rondon.webp"
+    },
+    {
+      "id": "ESC-000022",
+      "nome": "Centro Municipal de Ensino Maria Arlene Neves",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-maria-arlene-neves.webp"
+    },
+    {
+      "id": "ESC-000023",
+      "nome": "Centro Municipal de Ensino Professor João Maria",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-joao-maria-do-nascimento-filho.webp"
+    },
+    {
+      "id": "ESC-000024",
+      "nome": "Centro Municipal de Ensino Professora Edivania Tavares",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-edivania-tavares.webp"
+    },
+    {
+      "id": "ESC-000025",
+      "nome": "Centro Municipal de Ensino Professora Iracema Casagrande",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-iracema-casagrande.webp"
+    },
+    {
+      "id": "ESC-000026",
+      "nome": "Centro Municipal de Ensino Professor José Nodari",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-jose-nodari.webp"
+    },
+    {
+      "id": "ESC-000027",
+      "nome": "Centro Municipal de Ensino Professora Jucileide Praxedes",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-jucileide-praxedes.webp"
+    },
+    {
+      "id": "ESC-000028",
+      "nome": "Centro Municipal de Ensino Silvio Paternez",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-silvio-paternez.webp"
+    },
+    {
+      "id": "ESC-000029",
+      "nome": "Centro Municipal de Ensino Tania Arantes Junqueira",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-tania-arantes-junqueira.webp"
+    },
+    {
+      "id": "ESC-000030",
+      "nome": "Centro Municipal de Ensino Tia Lina",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-tia-lina.webp"
+    },
+    {
+      "id": "ESC-000031",
+      "nome": "Centro Municipal de Ensino Professora Isoldi Storck",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-isoldi-storck.webp"
+    },
+    {
+      "id": "ESC-000032",
+      "nome": "Centro Municipal de Ensino Dona Nena",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-dona-nena.webp"
+    },
+    {
+      "id": "ESC-000033",
+      "nome": "Centro Municipal de Ensino Leonardo Cezar Vendrame",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-leonardo-cezar-vendrame.webp"
+    },
+    {
+      "id": "ESC-000034",
+      "nome": "Centro Municipal de Ensino Professor Sebastião Rodrigues dos Santos",
+      "indigena": false,
+      "brasao": "assets/brasoes/cme-prof-sebastiao-rodrigues-dos-santos.webp"
+    },
+    {
+      "id": "ESC-000035",
+      "nome": "Escola Municipal Chapadão do Rio Verde",
+      "indigena": false,
+      "brasao": "assets/marca/brasao-tangara.webp"
+    },
+    {
+      "id": "ESC-000036",
+      "nome": "Escola Municipal Laura Vieira de Souza",
+      "indigena": false,
+      "brasao": "assets/brasoes/em-laura-vieira-de-souza.webp"
+    },
+    {
+      "id": "ESC-000038",
+      "nome": "Escola Municipal Indígena Cabeceira do Osso",
+      "indigena": true,
+      "brasao": "assets/marca/educacao-indigena.webp"
+    },
+    {
+      "id": "ESC-000039",
+      "nome": "Escola Municipal Indígena Cabeceira do Sacre",
+      "indigena": true,
+      "brasao": "assets/brasoes/emi-cabeceira-do-sacre.webp"
+    },
+    {
+      "id": "ESC-000041",
+      "nome": "Escola Municipal Indígena Formoso",
+      "indigena": true,
+      "brasao": "assets/brasoes/emi-formoso.webp"
+    },
+    {
+      "id": "ESC-000044",
+      "nome": "Escola Municipal Indígena Konahete",
+      "indigena": true,
+      "brasao": "assets/brasoes/emi-konahete.webp"
+    },
+    {
+      "id": "ESC-000051",
+      "nome": "Escola Municipal Indígena Zozoitero",
+      "indigena": true,
+      "brasao": "assets/brasoes/emi-zozoitero.webp"
+    }
+  ]
+}

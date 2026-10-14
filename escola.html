@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área da Escola | Portal SEMEC</title>
+  <meta name="description" content="Área de trabalho das unidades escolares da Rede Municipal de Ensino de Tangará da Serra.">
+  <link rel="icon" href="assets/marca/emblema-portal-semec.webp" type="image/webp">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Porta: aparece enquanto a conta não foi confirmada -->
+  <div class="auth-page" id="porta" data-estado="verificando">
+    <main class="auth-main">
+      <div class="auth-shell">
+        <section class="auth-intro">
+          <span class="auth-brand">
+            <img src="assets/marca/brasao-tangara.webp" alt="Brasão de Tangará da Serra">
+            <span>
+              <strong>Prefeitura Municipal de Tangará da Serra</strong>
+              <small>SEMEC — Secretaria Municipal de Educação</small>
+            </span>
+          </span>
+          <p class="auth-kicker">Portal SEMEC</p>
+          <h2>Ferramentas da escola em um só lugar.</h2>
+        </section>
+
+        <section class="auth-card" aria-labelledby="porta-titulo" aria-live="polite">
+          <img class="auth-mascot" id="porta-mascote" src="assets/mascote/tangara-carregando.webp" alt="">
+          <p class="auth-kicker">Área da Escola</p>
+          <h1 id="porta-titulo">Verificando o acesso</h1>
+          <p id="porta-texto">Aguarde um instante.</p>
+          <p class="alert is-error" id="porta-alerta" hidden></p>
+          <button class="auth-submit" type="button" id="porta-botao" hidden>Entrar com a conta institucional</button>
+          <p class="auth-help" id="porta-ajuda" hidden>Você será levado à página de login do Google e voltará para cá automaticamente.</p>
+          <div class="auth-links">
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/ajuda.html">Ajuda</a>
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/politica-privacidade.html">Política de Privacidade</a>
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/acessibilidade.html">Acessibilidade</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="auth-footer">
+      <p>Portal SEMEC — Secretaria Municipal de Educação de Tangará da Serra</p>
+    </footer>
+  </div>
+
+  <!-- Área de trabalho: aparece depois que o backend confirma a unidade -->
+  <div id="area" hidden>
+    <aside class="sidebar" id="menu-lateral" aria-label="Menu principal">
+      <div class="sidebar-brand">
+        <img src="assets/marca/emblema-portal-semec.webp" alt="">
+        <div>
+          <strong>Portal SEMEC</strong>
+          <span>Área da Escola</span>
+        </div>
+      </div>
+      <button class="sidebar-close" type="button" aria-label="Fechar menu" data-menu-close>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <nav class="nav">
+        <div class="nav-group">
+          <p>Principal</p>
+          <a href="escola.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg>Início da Escola</a>
+          <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13 7 21l5-2.5 5 2.5-1.5-8"/></svg>Central de Certificados</a>
+        </div>
+        <div class="nav-group">
+          <p>Assistência</p>
+          <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/ajuda.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>Ajuda</a>
+          <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/entrar-em-contato.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Entrar em contato</a>
+          <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/politica-privacidade.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 3 8.4 7 10 4-1.6 7-5.6 7-10V6z"/></svg>Política de Privacidade</a>
+          <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/acessibilidade.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="1.5"/><path d="M5 8h14M12 8v6M9 21l3-7 3 7"/></svg>Acessibilidade</a>
+        </div>
+        <div class="nav-group">
+          <p>Conta</p>
+          <button type="button" data-sair><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg>Sair</button>
+        </div>
+      </nav>
+    </aside>
+    <button class="backdrop" type="button" aria-label="Fechar menu" data-menu-close hidden></button>
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lateral">
+          <span></span><span></span><span></span>
+        </button>
+        <div>
+          <p>Portal SEMEC / Área da Escola</p>
+          <h1>Início da Escola</h1>
+        </div>
+      </div>
+      <div class="user-summary">
+        <img src="assets/marca/brasao-tangara.webp" alt="" data-unidade-brasao>
+        <div>
+          <strong data-unidade-nome>Identificando unidade...</strong>
+          <span>Conta institucional</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" id="conteudo">
+      <div class="content">
+        <div class="notice" id="area-aviso" hidden>
+          <div>
+            <strong id="area-aviso-titulo"></strong>
+            <span id="area-aviso-texto"></span>
+          </div>
+        </div>
+
+        <section class="unit-card" aria-labelledby="unidade-nome">
+          <div class="unit-card-logo"><img src="assets/marca/brasao-tangara.webp" alt="" data-unidade-brasao></div>
+          <div>
+            <p class="kicker">Unidade identificada</p>
+            <h2 id="unidade-nome" data-unidade-nome>Identificando unidade...</h2>
+            <span class="unit-card-network">Rede Municipal de Ensino</span>
+            <dl class="unit-meta">
+              <div><dt>Acesso</dt><dd>Conta institucional</dd></div>
+              <div><dt>Área</dt><dd>Área da Escola</dd></div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="page-heading">
+          <p class="kicker">Ferramentas</p>
+          <h2>O que a escola pode fazer aqui</h2>
+          <p>Cada ferramenta abre no próprio sistema e confere a sua conta antes de mostrar os dados.</p>
+        </section>
+        <div class="tool-grid" data-area="escola"></div>
+
+        <footer class="site-footer">
+          <strong>Portal SEMEC</strong>
+          <span>Secretaria Municipal de Educação de Tangará da Serra</span>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/acesso.js" defer></script>
+  <script src="js/portal.js" defer></script>
+  <script src="js/area-escola.js" defer></script>
+</body>
+</html>

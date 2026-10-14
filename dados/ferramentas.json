@@ -1,0 +1,50 @@
+{
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão na área indicada. Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
+  "atualizado_em": "2026-10-13",
+  "areas": {
+    "escola": "Área da Escola",
+    "semec": "Área da SEMEC"
+  },
+  "ferramentas": [
+    {
+      "id": "central-certificados",
+      "area": "escola",
+      "nome": "Central de Certificados",
+      "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
+      "icone": "certificado",
+      "situacao": "pronta",
+      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
+    },
+    {
+      "id": "gerador-certificados-2026",
+      "area": "semec",
+      "nome": "Gerador de Certificados",
+      "descricao": "Emitir certificados das formações em lote a partir da planilha da formação.",
+      "icone": "certificado",
+      "situacao": "em-construcao",
+      "endereco": "",
+      "pendencia": "Confirmar se já está pronto para uso da equipe e informar o endereço."
+    },
+    {
+      "id": "gerador-calendario-escolar",
+      "area": "semec",
+      "nome": "Gerador de Calendário Escolar",
+      "descricao": "Montar os calendários anuais da Educação Infantil e do Ensino Fundamental.",
+      "icone": "calendario",
+      "situacao": "em-construcao",
+      "endereco": "",
+      "pendencia": "Virar sisteminha (web app) para a equipe não editar a planilha."
+    },
+    {
+      "id": "tangara-em-dados",
+      "area": "semec",
+      "nome": "Tangará em Dados",
+      "descricao": "Indicadores e informações da Rede Municipal de Ensino.",
+      "icone": "indicadores",
+      "situacao": "planejada",
+      "endereco": "",
+      "pendencia": "Informar o endereço quando estiver publicado."
+    }
+  ],
+  "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
+}
