@@ -21,9 +21,9 @@
       "nome": "Gerador de Certificados",
       "descricao": "Emitir certificados das formações em lote a partir da planilha da formação.",
       "icone": "certificado",
-      "situacao": "em-construcao",
+      "situacao": "planejada",
       "endereco": "",
-      "pendencia": "Confirmar se já está pronto para uso da equipe e informar o endereço."
+      "pendencia": "Sisteminha ainda não construído."
     },
     {
       "id": "gerador-calendario-escolar",
@@ -31,9 +31,9 @@
       "nome": "Gerador de Calendário Escolar",
       "descricao": "Montar os calendários anuais da Educação Infantil e do Ensino Fundamental.",
       "icone": "calendario",
-      "situacao": "em-construcao",
+      "situacao": "planejada",
       "endereco": "",
-      "pendencia": "Virar sisteminha (web app) para a equipe não editar a planilha."
+      "pendencia": "Sisteminha ainda não construído."
     },
     {
       "id": "tangara-em-dados",
@@ -43,7 +43,7 @@
       "icone": "indicadores",
       "situacao": "planejada",
       "endereco": "",
-      "pendencia": "Informar o endereço quando estiver publicado."
+      "pendencia": "Sisteminha ainda não construído."
     }
   ],
   "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"

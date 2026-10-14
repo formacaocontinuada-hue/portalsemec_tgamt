@@ -5,6 +5,7 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 ## Outubro de 2026 — recomeço limpo
 
 **Nome e formato**
+- Endereço: repositório `portalsemec_tgamt` na conta `formacaocontinuada-hue` → `https://formacaocontinuada-hue.github.io/portalsemec_tgamt/` (mesma conta da Central, login compartilhado).
 - "Portal SEMEC" é o nome guarda-chuva (o mesmo do e-mail institucional).
 - O portal é uma vitrine: parte pública + porta de entrada + áreas de trabalho.
 - Publicação: GitHub Pages, repositório novo e limpo, gratuito. Repositório público,
@@ -51,6 +52,6 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Ajuda, contato, privacidade e acessibilidade apontam para as páginas da Central até o Portal ter as suas.
 
 ## Pendências
-- Apps Script da Central (`10_sessao_entrada.gs`, `urlRetornoSegura_`): hoje só devolve a entrada para `/central-certificados-semec/`. Incluir `/portal-semec/` na lista de caminhos permitidos e publicar nova versão da implantação. O repositório do Portal precisa se chamar `portal-semec` no GitHub `formacaocontinuada-hue`.
+- Apps Script da Central (`10_sessao_entrada.gs`, `urlRetornoSegura_`): lista de caminhos permitidos alterada (14/10) para aceitar `/portalsemec_tgamt/`. Conferir se o caminho ficou exatamente assim e se a nova versão foi publicada nas implantações.
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.

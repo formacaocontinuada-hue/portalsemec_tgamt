@@ -1,13 +1,13 @@
 # Portal SEMEC
 
 Vitrine de acesso às ferramentas da Secretaria Municipal de Educação de Tangará da Serra-MT.
-Site estático publicado pelo GitHub Pages. O site não guarda dados: cada ferramenta continua
+Site estático publicado pelo GitHub Pages em https://formacaocontinuada-hue.github.io/portalsemec_tgamt/. O site não guarda dados: cada ferramenta continua
 no seu próprio lugar (Apps Script, planilhas) e confere sozinha quem pode usá-la.
 
 ## Estrutura
 
 ```
-portal-semec/
+portalsemec_tgamt/
 ├── index.html              página pública (a fazer)
 ├── escola.html             Área da Escola: porta + área de trabalho da unidade
 ├── componentes.html        guia visual das áreas internas (conferência; não é linkada no site)
