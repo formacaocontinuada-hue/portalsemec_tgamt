@@ -49,9 +49,16 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Área da SEMEC: nenhum sisteminha construído ainda; os cartões aparecem como "Em breve".
 - Área da Escola identifica a unidade pelo login (mesmo Apps Script e mesma autorização da Central). Conta SEMEC vê a Área da Escola com aviso "Visão da SEMEC". Conta sem cadastro vê "Acesso não autorizado" e pode entrar com outra conta.
 - Página inicial pública (14/10): restaurada do Portal do Codex com o mesmo visual. Eventos e Notícias aparecem como "Em breve"; newsletter desativada ("As inscrições ainda não estão abertas"); "Saiba mais" do programa retirado; botão "Área do Servidor" virou "Área da Escola". CSS próprio (`css/publico.css`), só com as regras que a página usa.
+- Área da SEMEC (14/10): `semec.html`, mesma porta e mesmo login. Só contas do tipo SEMEC entram; conta de escola vê "Esta área é de outra equipe" e o botão para a Área da Escola. Mostra o nome do setor (aba Escolas). Ferramentas: Central de Certificados (disponível) e os sisteminhas da SEMEC como "Em breve". Menu tem "Visão da Escola". Link no rodapé da página pública.
+- Uma ferramenta pode aparecer em mais de uma área (`areas` em `dados/ferramentas.json`).
 - Ajuda, contato, privacidade e acessibilidade apontam para as páginas da Central até o Portal ter as suas.
 
+**Login (Apps Script da Central) — funcionando em 14/10**
+- `10_sessao_entrada.gs` aceita retorno para `/central-certificados-semec/` e `/portalsemec_tgamt/`; a tela `Entrar` mostra "Portal SEMEC · Área da Escola" ou "Central de Certificados" conforme a origem.
+- Implantação institucional: Executar como Eu, acesso somente domínio (é ela que confere a conta).
+- Implantação pública: Executar como Eu, acesso **Qualquer pessoa**. Se ficar "somente domínio", o Portal e a Central mostram "Não foi possível falar com o serviço da SEMEC".
+- `BASE_CONSULTA_ID` em `00_Config` precisa apontar para a Base_Consulta em uso; se a base for recriada, trocar o ID e publicar nova versão nas duas implantações.
+
 ## Pendências
-- Apps Script da Central (`10_sessao_entrada.gs`, `urlRetornoSegura_`): lista de caminhos permitidos alterada (14/10) para aceitar `/portalsemec_tgamt/`. Conferir se o caminho ficou exatamente assim e se a nova versão foi publicada nas implantações.
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.

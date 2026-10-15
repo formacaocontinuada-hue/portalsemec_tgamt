@@ -1,6 +1,6 @@
 {
-  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão na área indicada. Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
-  "atualizado_em": "2026-10-13",
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
+  "atualizado_em": "2026-10-14",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC"
@@ -8,7 +8,7 @@
   "ferramentas": [
     {
       "id": "central-certificados",
-      "area": "escola",
+      "areas": ["escola", "semec"],
       "nome": "Central de Certificados",
       "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
       "icone": "certificado",
@@ -17,7 +17,7 @@
     },
     {
       "id": "gerador-certificados-2026",
-      "area": "semec",
+      "areas": ["semec"],
       "nome": "Gerador de Certificados",
       "descricao": "Emitir certificados das formações em lote a partir da planilha da formação.",
       "icone": "certificado",
@@ -27,7 +27,7 @@
     },
     {
       "id": "gerador-calendario-escolar",
-      "area": "semec",
+      "areas": ["semec"],
       "nome": "Gerador de Calendário Escolar",
       "descricao": "Montar os calendários anuais da Educação Infantil e do Ensino Fundamental.",
       "icone": "calendario",
@@ -37,7 +37,7 @@
     },
     {
       "id": "tangara-em-dados",
-      "area": "semec",
+      "areas": ["semec"],
       "nome": "Tangará em Dados",
       "descricao": "Indicadores e informações da Rede Municipal de Ensino.",
       "icone": "indicadores",

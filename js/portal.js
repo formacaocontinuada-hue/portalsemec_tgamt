@@ -103,7 +103,7 @@
         grids.forEach(function (grid) {
           grid.innerHTML = "";
           (data.ferramentas || [])
-            .filter(function (tool) { return tool.area === grid.dataset.area; })
+            .filter(function (tool) { return (tool.areas || []).indexOf(grid.dataset.area) !== -1; })
             .forEach(function (tool) { grid.appendChild(buildCard(tool)); });
         });
       })
