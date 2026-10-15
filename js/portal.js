@@ -50,12 +50,7 @@
     "planejada": { label: "Em breve", className: "pill-muted" }
   };
 
-  var ICONS = {
-    certificado: '<circle cx="12" cy="9" r="5"/><path d="M8.5 13 7 21l5-2.5 5 2.5-1.5-8"/>',
-    calendario: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
-    documento: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',
-    indicadores: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'
-  };
+  var MASCOTE_PADRAO = "tangara-padrao";
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -79,9 +74,11 @@
       card.setAttribute("aria-disabled", "true");
     }
 
-    var icon = el("span", "tool-card-icon");
-    icon.setAttribute("aria-hidden", "true");
-    icon.innerHTML = '<svg viewBox="0 0 24 24">' + (ICONS[tool.icone] || ICONS.documento) + "</svg>";
+    var icon = el("img", "tool-card-icon");
+    icon.src = "assets/mascote/" + (tool.mascote || MASCOTE_PADRAO) + ".webp";
+    icon.alt = "";
+    icon.width = 88;
+    icon.height = 88;
 
     card.appendChild(icon);
     card.appendChild(el("strong", "", tool.nome));

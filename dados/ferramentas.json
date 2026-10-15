@@ -1,6 +1,6 @@
 {
-  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
-  "atualizado_em": "2026-10-14",
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
+  "atualizado_em": "2026-10-15",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC"
@@ -8,39 +8,48 @@
   "ferramentas": [
     {
       "id": "central-certificados",
-      "areas": ["escola", "semec"],
+      "areas": [
+        "escola",
+        "semec"
+      ],
       "nome": "Central de Certificados",
       "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
-      "icone": "certificado",
+      "mascote": "tangara-consulta-certificados",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
     },
     {
       "id": "gerador-certificados-2026",
-      "areas": ["semec"],
+      "areas": [
+        "semec"
+      ],
       "nome": "Gerador de Certificados",
       "descricao": "Emitir certificados das formações em lote a partir da planilha da formação.",
-      "icone": "certificado",
+      "mascote": "tangara-gerador-certificados",
       "situacao": "planejada",
       "endereco": "",
       "pendencia": "Sisteminha ainda não construído."
     },
     {
       "id": "gerador-calendario-escolar",
-      "areas": ["semec"],
+      "areas": [
+        "semec"
+      ],
       "nome": "Gerador de Calendário Escolar",
       "descricao": "Montar os calendários anuais da Educação Infantil e do Ensino Fundamental.",
-      "icone": "calendario",
+      "mascote": "tangara-calendario",
       "situacao": "planejada",
       "endereco": "",
       "pendencia": "Sisteminha ainda não construído."
     },
     {
       "id": "tangara-em-dados",
-      "areas": ["semec"],
+      "areas": [
+        "semec"
+      ],
       "nome": "Tangará em Dados",
       "descricao": "Indicadores e informações da Rede Municipal de Ensino.",
-      "icone": "indicadores",
+      "mascote": "tangara-indicadores",
       "situacao": "planejada",
       "endereco": "",
       "pendencia": "Sisteminha ainda não construído."

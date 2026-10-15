@@ -651,7 +651,7 @@ textarea {
 
 .tool-card {
   display: grid;
-  grid-template-columns: 46px minmax(0, 1fr);
+  grid-template-columns: 72px minmax(0, 1fr);
   align-items: start;
   gap: 4px 14px;
   min-height: 100px;
@@ -673,24 +673,10 @@ a.tool-card:focus-visible {
 }
 
 .tool-card-icon {
-  display: grid;
   grid-row: span 3;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 10px;
-  background: var(--navy);
-  color: var(--gold-light);
-}
-
-.tool-card-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
 }
 
 .tool-card strong {
@@ -716,8 +702,7 @@ a.tool-card:focus-visible {
 }
 
 .tool-card[aria-disabled="true"] .tool-card-icon {
-  background: #dfe8f3;
-  color: #6e86a3;
+  opacity: 0.7;
 }
 
 .pill {

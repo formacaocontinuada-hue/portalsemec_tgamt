@@ -31,7 +31,7 @@ portalsemec_tgamt/
 ## Como incluir um sisteminha novo
 
 1. Abra `dados/ferramentas.json`.
-2. Acrescente um item com `areas` (lista com `escola` e/ou `semec`), `nome`, `descricao`, `icone`,
+2. Acrescente um item com `areas` (lista com `escola` e/ou `semec`), `nome`, `descricao`, `mascote`,
    `situacao` e `endereco`.
 3. O cartão aparece sozinho em cada área da lista. Ele só vira link quando `situacao` é `pronta`
    e o `endereco` está preenchido.
