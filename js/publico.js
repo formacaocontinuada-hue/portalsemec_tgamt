@@ -1,6 +1,7 @@
 /*
   Portal SEMEC — página pública.
-  Só o menu do celular (mesmo comportamento do Portal aprovado).
+  Menu do celular (mesmo comportamento do Portal aprovado) e lista
+  "Áreas de trabalho" do cabeçalho.
 */
 
 (function () {
@@ -50,4 +51,28 @@
     if (e.key === "Escape" && nav.classList.contains("is-open")) abrir(false, true);
   });
   window.addEventListener("resize", function () { if (!celular.matches) abrir(false); });
+})();
+
+(function () {
+  "use strict";
+
+  var botao = document.querySelector(".areas-menu .server-button");
+  var lista = document.getElementById("areas-lista");
+  if (!botao || !lista) return;
+
+  function abrir(aberta) {
+    lista.hidden = !aberta;
+    botao.setAttribute("aria-expanded", String(aberta));
+  }
+
+  botao.addEventListener("click", function () { abrir(lista.hidden); });
+  document.addEventListener("click", function (e) {
+    if (!lista.hidden && !e.target.closest(".areas-menu")) abrir(false);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !lista.hidden) {
+      abrir(false);
+      botao.focus();
+    }
+  });
 })();

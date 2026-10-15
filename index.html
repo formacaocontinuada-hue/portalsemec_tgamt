@@ -37,24 +37,24 @@
         <a href="#eventos">Eventos</a>
         <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html">Validar Certificado</a>
         <a href="#contato">Contato</a>
-        <a class="server-link mobile-only" href="escola.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 21h18"></path>
-            <path d="M5 21V9l7-5 7 5v12"></path>
-            <path d="M9 21v-6h6v6"></path>
-          </svg>
-          Área da Escola
-        </a>
+        <div class="areas-mobile mobile-only">
+          <p>Áreas de trabalho</p>
+          <a class="server-link" href="escola.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"></path><path d="M5 21V9l7-5 7 5v12"></path><path d="M9 21v-6h6v6"></path></svg>Área da Escola</a>
+          <a class="server-link" href="semec.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"></path><path d="M4 21V10h16v11"></path><path d="M2 10 12 3l10 7"></path><path d="M8 14v4M12 14v4M16 14v4"></path></svg>Área da SEMEC</a>
+        </div>
       </nav>
 
-      <a class="server-button" href="escola.html">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 21h18"></path>
-          <path d="M5 21V9l7-5 7 5v12"></path>
-          <path d="M9 21v-6h6v6"></path>
-        </svg>
-        <span>Área da Escola</span>
-      </a>
+      <div class="areas-menu">
+        <button class="server-button" type="button" aria-label="Áreas de trabalho" aria-expanded="false" aria-controls="areas-lista">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+          <span>Áreas de trabalho</span>
+          <svg class="areas-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+        <div class="areas-lista" id="areas-lista" hidden>
+          <a href="escola.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"></path><path d="M5 21V9l7-5 7 5v12"></path><path d="M9 21v-6h6v6"></path></svg><span><strong>Área da Escola</strong><small>Ferramentas das unidades escolares</small></span></a>
+          <a href="semec.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"></path><path d="M4 21V10h16v11"></path><path d="M2 10 12 3l10 7"></path><path d="M8 14v4M12 14v4M16 14v4"></path></svg><span><strong>Área da SEMEC</strong><small>Ferramentas das equipes da Secretaria</small></span></a>
+        </div>
+      </div>
     </div>
   </header>
 

@@ -50,6 +50,9 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Área da Escola identifica a unidade pelo login (mesmo Apps Script e mesma autorização da Central). Conta SEMEC vê a Área da Escola com aviso "Visão da SEMEC". Conta sem cadastro vê "Acesso não autorizado" e pode entrar com outra conta.
 - Página inicial pública (14/10): restaurada do Portal do Codex com o mesmo visual. Eventos e Notícias aparecem como "Em breve"; newsletter desativada ("As inscrições ainda não estão abertas"); "Saiba mais" do programa retirado; botão "Área do Servidor" virou "Área da Escola". CSS próprio (`css/publico.css`), só com as regras que a página usa.
 - Área da SEMEC (14/10): `semec.html`, mesma porta e mesmo login. Só contas do tipo SEMEC entram; conta de escola vê "Esta área é de outra equipe" e o botão para a Área da Escola. Mostra o nome do setor (aba Escolas). Ferramentas: Central de Certificados (disponível) e os sisteminhas da SEMEC como "Em breve". Menu tem "Visão da Escola". Link no rodapé da página pública.
+- Página pública (15/10): o botão do cabeçalho virou "Áreas de trabalho", com a lista das áreas (Escola e SEMEC); no celular, as áreas aparecem agrupadas no fim do menu. Novas áreas entram nessa lista.
+- Áreas de trabalho têm "Página inicial do Portal" no menu lateral e "Página inicial" na tela de entrada.
+- Cartões de ferramenta usam o Tangará (campo `mascote` em `dados/ferramentas.json`).
 - Uma ferramenta pode aparecer em mais de uma área (`areas` em `dados/ferramentas.json`).
 - Ajuda, contato, privacidade e acessibilidade apontam para as páginas da Central até o Portal ter as suas.
 
