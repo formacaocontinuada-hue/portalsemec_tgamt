@@ -62,6 +62,20 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Implantação pública: Executar como Eu, acesso **Qualquer pessoa**. Se ficar "somente domínio", o Portal e a Central mostram "Não foi possível falar com o serviço da SEMEC".
 - `BASE_CONSULTA_ID` em `00_Config` precisa apontar para a Base_Consulta em uso; se a base for recriada, trocar o ID e publicar nova versão nas duas implantações.
 
+**Calendário Escolar (19/10)**
+- Planilha e Apps Script do calendário passaram para a conta `portal.semec@` (a Formação continua editora).
+- Área da SEMEC: cartão "Gerador de Calendário Escolar" abre o sisteminha (lançar, conferir, publicar) em nova aba.
+- Área da Escola: cartão "Calendário Escolar" só para baixar a versão oficial.
+- No sisteminha, "Gerar PDF" é rascunho para a SEMEC conferir; "Publicar para as escolas" grava os dois PDFs
+  na pasta fixa "Calendário Escolar — Publicado" (Drive da portal.semec@, leitura para quem tem o link).
+  O endereço da pasta não muda; é ele que vai no cartão da Área da Escola.
+- O calendário é documento público, então a pasta publicada não precisa de login.
+- O sisteminha só abre para os e-mails (Email 1 e Email 2) das linhas do tipo SEMEC em atividade na aba
+  Escolas da Base de Consulta (mesma lista da Central). Implantação: Executar como Eu, acesso somente domínio.
+  Se a Base for recriada, trocar `ACESSO.PLANILHA_ID` no Código.gs do calendário e publicar nova versão.
+- Cartão da SEMEC usa o endereço com `/a/macros/edu.tangaradaserra.mt.gov.br/` (evita o erro de quem tem
+  duas contas Google abertas no navegador).
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.

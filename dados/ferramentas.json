@@ -1,6 +1,6 @@
 {
   "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
-  "atualizado_em": "2026-10-15",
+  "atualizado_em": "2026-10-19",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC"
@@ -36,11 +36,21 @@
         "semec"
       ],
       "nome": "Gerador de Calendário Escolar",
-      "descricao": "Montar os calendários anuais da Educação Infantil e do Ensino Fundamental.",
+      "descricao": "Lançar os dias, conferir os dias letivos e publicar para as escolas os calendários da Educação Infantil e do Ensino Fundamental.",
       "mascote": "tangara-calendario",
-      "situacao": "planejada",
-      "endereco": "",
-      "pendencia": "Sisteminha ainda não construído."
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec"
+    },
+    {
+      "id": "calendario-escolar",
+      "areas": [
+        "escola"
+      ],
+      "nome": "Calendário Escolar",
+      "descricao": "Baixar o calendário escolar do ano, da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
+      "mascote": "tangara-calendario",
+      "situacao": "pronta",
+      "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno"
     },
     {
       "id": "tangara-em-dados",
