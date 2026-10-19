@@ -507,6 +507,39 @@ textarea {
   color: var(--text-body);
 }
 
+/* Visualizador do Google Drive (Calendário Escolar) */
+.embed-titulo {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 1.24rem;
+  line-height: 1.2;
+}
+
+.embed-dica {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.embed-drive {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.embed-alt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .empty {
   border: 1px solid rgba(190, 211, 236, 0.8);
   border-radius: var(--radius);

@@ -65,7 +65,8 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 **Calendário Escolar (19/10)**
 - Planilha e Apps Script do calendário passaram para a conta `portal.semec@` (a Formação continua editora).
 - Área da SEMEC: cartão "Gerador de Calendário Escolar" abre o sisteminha (lançar, conferir, publicar) em nova aba.
-- Área da Escola: cartão "Calendário Escolar" só para baixar a versão oficial.
+- Área da Escola: cartão "Calendário Escolar" abre `calendario.html`, página da própria área (mesmo login)
+  que mostra a pasta publicada embutida, com as miniaturas dos dois calendários, e um botão para abrir a pasta.
 - No sisteminha, "Gerar PDF" é rascunho para a SEMEC conferir; "Publicar para as escolas" grava os dois PDFs
   na pasta fixa "Calendário Escolar — Publicado" (Drive da portal.semec@, leitura para quem tem o link).
   O endereço da pasta não muda; é ele que vai no cartão da Área da Escola.

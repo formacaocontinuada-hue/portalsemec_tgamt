@@ -47,10 +47,10 @@
         "escola"
       ],
       "nome": "Calendário Escolar",
-      "descricao": "Baixar o calendário escolar do ano, da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
+      "descricao": "Ver e baixar o calendário escolar do ano, da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
       "mascote": "tangara-calendario",
       "situacao": "pronta",
-      "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno"
+      "endereco": "calendario.html"
     },
     {
       "id": "tangara-em-dados",

@@ -11,6 +11,7 @@ portalsemec_tgamt/
 ├── index.html              página pública (visual aprovado no Portal do Codex)
 ├── escola.html             Área da Escola: porta + área de trabalho da unidade
 ├── semec.html              Área da SEMEC: porta + área de trabalho dos setores da SEMEC
+├── calendario.html         Área da Escola: calendário escolar publicado pela SEMEC (pasta do Drive embutida)
 ├── componentes.html        guia visual das áreas internas (conferência; não é linkada no site)
 ├── componentes-entrada.html guia visual da tela de entrada (conferência)
 ├── css/publico.css         estilos da página pública
