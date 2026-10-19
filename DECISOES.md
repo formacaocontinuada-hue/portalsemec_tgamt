@@ -51,6 +51,11 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Página inicial pública (14/10): restaurada do Portal do Codex com o mesmo visual. Eventos e Notícias aparecem como "Em breve"; newsletter desativada ("As inscrições ainda não estão abertas"); "Saiba mais" do programa retirado; botão "Área do Servidor" virou "Área da Escola". CSS próprio (`css/publico.css`), só com as regras que a página usa.
 - Área da SEMEC (14/10): `semec.html`, mesma porta e mesmo login. Só contas do tipo SEMEC entram; conta de escola vê "Esta área é de outra equipe" e o botão para a Área da Escola. Mostra o nome do setor (aba Escolas). Ferramentas: Central de Certificados (disponível) e os sisteminhas da SEMEC como "Em breve". Menu tem "Visão da Escola". Link no rodapé da página pública.
 - Página pública (15/10): o botão do cabeçalho virou "Áreas de trabalho", com a lista das áreas (Escola e SEMEC); no celular, as áreas aparecem agrupadas no fim do menu. Novas áreas entram nessa lista.
+- Menu lateral igual em todas as páginas da mesma área, inclusive na Central de Certificados (19/10):
+  Escola → Página inicial do Portal, Início da Escola, Central de Certificados, Calendário Escolar;
+  SEMEC → Página inicial do Portal, Início da SEMEC, Central de Certificados, Gerador de Calendário, Visão da Escola;
+  depois Assistência (Ajuda, Entrar em contato, Política de Privacidade, Acessibilidade) e Conta (Sair), com os mesmos ícones.
+  Ferramenta nova com página própria entra no menu das duas pontas (Portal e Central).
 - Áreas de trabalho têm "Página inicial do Portal" no menu lateral e "Página inicial" na tela de entrada.
 - Ícone da aba do navegador: emblema do Portal em todas as páginas. `assets/marca/emblema-portal-semec.png` existe só para
   os sisteminhas em Apps Script (`setFaviconUrl` não aceita WebP); as páginas do site usam o `.webp`.
