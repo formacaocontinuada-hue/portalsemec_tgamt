@@ -73,7 +73,7 @@ body.menu-open {
 body.public-nav-eventos .header-shell {
   gap: 14px;
   padding-inline: 18px;
-  overflow: hidden;
+  overflow: visible; /* a lista "Áreas de trabalho" sai de dentro do cabeçalho */
 }
 
 body.public-nav-eventos .city-brand {
