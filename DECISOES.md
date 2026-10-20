@@ -54,7 +54,7 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Menu lateral igual em todas as páginas da mesma área, inclusive na Central de Certificados (19/10):
   Escola → Página inicial do Portal, Início da Escola, Central de Certificados, Calendário Escolar;
   SEMEC → Página inicial do Portal, Início da SEMEC, Central de Certificados, Gerador de Calendário, Visão da Escola;
-  depois Assistência (Ajuda, Entrar em contato, Política de Privacidade, Acessibilidade) e Conta (Sair), com os mesmos ícones.
+  depois Assistência (Entrar em contato, Política de Privacidade, Acessibilidade) e Conta (Sair), com os mesmos ícones.
   Ferramenta nova com página própria entra no menu das duas pontas (Portal e Central).
 - Áreas de trabalho têm "Página inicial do Portal" no menu lateral e "Página inicial" na tela de entrada.
 - Ícone da aba do navegador: emblema do Portal em todas as páginas. `assets/marca/emblema-portal-semec.png` existe só para
@@ -83,6 +83,31 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
   Se a Base for recriada, trocar `ACESSO.PLANILHA_ID` no Código.gs do calendário e publicar nova versão.
 - Cartão da SEMEC usa o endereço com `/a/macros/edu.tangaradaserra.mt.gov.br/` (evita o erro de quem tem
   duas contas Google abertas no navegador).
+
+**Calendário Escolar — gerador mais moldável (20/10)**
+- Vários anos na mesma planilha: um ano aberto por vez (o que todos veem no gerador). Ao trocar, o que foi
+  lançado à mão no ano que sai fica guardado na aba oculta `_ANOS`; ano novo começa só com fins de semana e
+  feriados. O que está publicado para as escolas só muda quando alguém clica em "Publicar".
+- Eventos (códigos) podem mudar nome, sigla, cor e letivo/não letivo a qualquer hora; a sigla nova é trocada em
+  todos os dias, anos guardados e feriados. F, IB e TB não mudam de sigla nem podem ser apagados (usados nos cálculos).
+- Apagar evento em uso: o sistema mostra onde ele está e pergunta; confirmado, esses dias voltam ao automático
+  e feriados que o usavam passam a F.
+- Feriados no próprio gerador: ligar/desligar qualquer um; cadastrar feriado municipal ou ponto facultativo
+  ("todo ano" ou "só neste ano"). Os que vieram prontos só ligam/desligam.
+- "Ver calendário" mostra uma prévia dos 12 meses na tela; o PDF oficial continua saindo por "Gerar PDF".
+
+**Central de Certificados — envio por e-mail, entrada e página única de ajuda (20/10)**
+- Cartão de cada pessoa: botão "Enviar por e-mail" ao lado de "Relatório anual 2026". Cada certificado ativo tem
+  "Selecionar"; o envio pode ser só dos selecionados ou de todos. Vai um e-mail só com os PDFs anexados; se passar
+  do tamanho, divide em mais de um. Só certificados ativos e da mesma pessoa; cada um fica registrado no histórico.
+- Entrada: continua com a conta Google @edu, mas a autorização vale 30 dias no mesmo navegador ("Sair" encerra na
+  hora). A página do Google confirma a conta sem segunda espera. O backend guarda por 10 min a lista de unidades e
+  por 5 min o registro de certificados (antes lia tudo a cada clique). Unidade desativada perde o acesso em até
+  10 min; certificado novo aparece em até 5 min (ou na hora, rodando `limparCacheCentral()` no editor).
+- Ajuda e Entrar em contato viraram uma página só (`entrar-em-contato.html`); `ajuda.html` só redireciona.
+  O item "Ajuda" saiu dos menus do Portal e da Central.
+- Página mais leve: brasões das unidades em arquivos `.webp` separados (antes, 14 scripts com todas as imagens
+  embutidas em toda página) e versões leves do brasão, do mascote e do banner.
 
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
