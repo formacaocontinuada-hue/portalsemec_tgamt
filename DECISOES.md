@@ -106,6 +106,10 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
   10 min; certificado novo aparece em até 5 min (ou na hora, rodando `limparCacheCentral()` no editor).
 - Ajuda e Entrar em contato viraram uma página só (`entrar-em-contato.html`); `ajuda.html` só redireciona.
   O item "Ajuda" saiu dos menus do Portal e da Central.
+- Lista de certificados: cada pessoa é uma faixa azul (nome, cargo, quantidade, escola) que abre e fecha; começa
+  fechada, e abre sozinha quando a pesquisa acha uma pessoa só. Cada certificado é uma linha: caixinha, nome do
+  evento, "formação · data · carga horária" e os botões Ver / Baixar / Enviar. A situação só aparece quando não é
+  ativo. No celular, o brasão sai do topo da página (fica no cartão da unidade).
 - Página mais leve: brasões das unidades em arquivos `.webp` separados (antes, 14 scripts com todas as imagens
   embutidas em toda página) e versões leves do brasão, do mascote e do banner.
 
