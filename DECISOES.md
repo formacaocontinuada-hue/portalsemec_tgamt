@@ -96,6 +96,14 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
   ("todo ano" ou "só neste ano"). Os que vieram prontos só ligam/desligam.
 - "Ver calendário" mostra uma prévia dos 12 meses na tela; o PDF oficial continua saindo por "Gerar PDF".
 
+**Calendário Escolar — impressão mais didática (29/10)**
+- No PDF, todo dia com evento mostra a sigla no meio da célula e o número do dia pequeno no canto de cima, à direita.
+  Dias com evento letivo (IB, TB, EXF, FEL...) ficam sem cor; os não letivos (F, PF, RE, FS...) continuam coloridos.
+  A legenda segue a mesma regra. Dias sem evento continuam só com o número.
+- Feriado é só F (saíram Antecipação AF e Transferência TF). Quando o feriado muda de dia, cadastra-se na tela
+  Feriados um feriado "só neste ano" com o motivo no nome, ex.: 14/05/2027 "Aniversário da Cidade (13/05)".
+- As siglas são desenhadas pelo sistema depois de copiar o modelo; "Guardar como modelo" mantém as fórmulas do modelo.
+
 **Central de Certificados — envio por e-mail, entrada e página única de ajuda (20/10)**
 - Cartão de cada pessoa: botão "Enviar por e-mail" ao lado de "Relatório anual 2026". Cada certificado ativo tem
   "Selecionar"; o envio pode ser só dos selecionados ou de todos. Vai um e-mail só com os PDFs anexados; se passar
