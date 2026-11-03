@@ -121,6 +121,19 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Página mais leve: brasões das unidades em arquivos `.webp` separados (antes, 14 scripts com todas as imagens
   embutidas em toda página) e versões leves do brasão, do mascote e do banner.
 
+**Quadro de servidores (03/11/2026)**
+- Primeira ferramenta nova da Área da Escola: ver quem atua, incluir quem falta (pelo CPF) e marcar quem não atua mais. Sem códigos pessoais e folhetos por enquanto (entram em janeiro, com a entrada do servidor).
+- Lê a Base de Dados de Homologação (carga de 07/10), que passa a ser a base oficial: as correções das escolas já valem para janeiro.
+- Projeto Apps Script próprio na conta portal.semec (10_APPSCRIPT/01_BACKENDS), separado do projeto de instalação e migrações, para nenhuma função de manutenção ficar ao alcance da tela. App da Web: Executar como Eu, acesso só do domínio. Abre em nova aba pelo cartão do Portal.
+- Quem entra: conta ATIVA em CONTAS_INSTITUCIONAIS (planilha Acessos). Escola vê só a própria; SEMEC e Administração escolhem a escola.
+- O CPF do servidor não aparece na tela da escola, nem mascarado (decisão de 03/11, substitui a seção 6 do escopo da Etapa 1 para a escola): a escola só digita o CPF para incluir alguém, e ele nunca volta para a tela. A lista mostra nome, cargo e vínculo. Consulta de CPF limitada a 60 por hora por conta. Inclusão e saída pedem o nome de quem opera e vão para LOGS_ALTERACOES; entradas e consultas de CPF, para LOGS_ACESSO.
+- Lista de gestores (03/11, estrutura 1.4.0): nova aba GESTORES na planilha de Acessos, com nome, função (diretor, coordenador pedagógico, secretário escolar, equipe da SEMEC, formador, orientador), escola ou grupo formativo e situação. Nas telas, quem opera escolhe o próprio nome na lista; não se digita. Quem não está na lista não consegue salvar e pede à SEMEC para incluir. Conta de escola vê os gestores da escola; conta da SEMEC vê os da unidade SEMEC. Vale para todas as ferramentas (Quadro primeiro; Calendário e as próximas em seguida). O Quadro dá o código GES-#### às linhas novas da aba GESTORES e corrige código repetido.
+- Menu lateral do Quadro igual ao das páginas da área: na Escola entra depois de Calendário Escolar; na SEMEC, depois de Gerador de Calendário e Visão da Escola.
+- Gerador de Calendário com a lista de gestores (03/11): "Quem está lançando?" deixa de ser nome digitado e passa a ser escolha na aba GESTORES (pessoas ATIVAS da unidade SEMEC). O histórico grava "GES-#### · Nome". Quem entra continua conferido pela aba Escolas da Base de Consulta.
+- Publicado em 03/11: cartão "Quadro de servidores" nas Áreas da Escola e da SEMEC e item no menu lateral de todas as páginas das duas áreas (Portal e Central de Certificados), logo depois de Calendário Escolar / Visão da Escola. Abre em nova aba.
+- O visual antigo do Codex (Área da Escola e login CPF + senha) era só demonstração, com dados inventados; serviu de referência visual e não foi copiado.
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
+- Gerador de Calendário: passar para o padrão visual do Portal (menu lateral, barra superior, painéis), sobre a versão atual.

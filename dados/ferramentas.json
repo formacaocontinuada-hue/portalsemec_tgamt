@@ -1,6 +1,6 @@
 {
   "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
-  "atualizado_em": "2026-10-19",
+  "atualizado_em": "2026-11-03",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC"
@@ -17,6 +17,18 @@
       "mascote": "tangara-consulta-certificados",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
+    },
+    {
+      "id": "quadro-servidores",
+      "areas": [
+        "escola",
+        "semec"
+      ],
+      "nome": "Quadro de servidores",
+      "descricao": "Ver quem atua na escola, incluir quem está faltando e marcar quem não atua mais.",
+      "mascote": "tangara-quadro",
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec"
     },
     {
       "id": "gerador-certificados-2026",
