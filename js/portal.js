@@ -98,10 +98,16 @@
       })
       .then(function (data) {
         grids.forEach(function (grid) {
+          var grupo = grid.dataset.grupo || "principal";
+          var lista = (data.ferramentas || []).filter(function (tool) {
+            return (tool.areas || []).indexOf(grid.dataset.area) !== -1 && (tool.grupo || "principal") === grupo;
+          });
           grid.innerHTML = "";
-          (data.ferramentas || [])
-            .filter(function (tool) { return (tool.areas || []).indexOf(grid.dataset.area) !== -1; })
-            .forEach(function (tool) { grid.appendChild(buildCard(tool)); });
+          lista.forEach(function (tool) { grid.appendChild(buildCard(tool)); });
+          // seção sem nenhum cartão (ex.: Funções adicionais) não aparece
+          var secao = grid.previousElementSibling;
+          if (grupo !== "principal" && secao && secao.matches("[data-secao-grupo]")) secao.hidden = !lista.length;
+          grid.hidden = grupo !== "principal" && !lista.length;
         });
       })
       .catch(function () {

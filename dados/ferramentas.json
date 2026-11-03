@@ -1,5 +1,5 @@
 {
-  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido.",
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas).",
   "atualizado_em": "2026-11-03",
   "areas": {
     "escola": "Área da Escola",
@@ -75,6 +75,19 @@
       "situacao": "planejada",
       "endereco": "",
       "pendencia": "Sisteminha ainda não construído."
+    },
+    {
+      "id": "tangara-sorteia",
+      "areas": [
+        "escola",
+        "semec"
+      ],
+      "grupo": "adicional",
+      "nome": "Tangará Sorteia",
+      "descricao": "Bingo e sorteios para os eventos da escola, com o Tangará animando cada rodada.",
+      "mascote": "tangara-sorteia",
+      "situacao": "pronta",
+      "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/"
     }
   ],
   "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"

@@ -133,7 +133,16 @@ Registro curto do que foi decidido, para que qualquer trabalho futuro siga a mes
 - Publicado em 03/11: cartão "Quadro de servidores" nas Áreas da Escola e da SEMEC e item no menu lateral de todas as páginas das duas áreas (Portal e Central de Certificados), logo depois de Calendário Escolar / Visão da Escola. Abre em nova aba.
 - O visual antigo do Codex (Área da Escola e login CPF + senha) era só demonstração, com dados inventados; serviu de referência visual e não foi copiado.
 
+**Funções adicionais e Tangará Sorteia (03/11/2026)**
+- Nova seção "Funções adicionais" nas Áreas da Escola e da SEMEC, abaixo das Ferramentas: ferramentas de apoio que não usam dados de servidores. Em `dados/ferramentas.json`, o campo `grupo: "adicional"` coloca o cartão nessa seção; seção sem cartão não aparece.
+- Primeiro item: Tangará Sorteia (https://formacaocontinuada-hue.github.io/tangara-sorteia/), app próprio com visual de evento; abre em nova aba e não passa pelo login do Portal. Cartão com o Tangará do presente.
+- Menu lateral: grupo "Funções adicionais" logo depois de Principal, em todas as páginas das áreas (Portal, Central de Certificados, Quadro de servidores e Gerador de Calendário).
+
+**Gerador de Calendário no padrão do Portal (03/11/2026)**
+- A tela usa o `css/portal.css` do Portal, o mesmo menu lateral da Área da SEMEC, a barra superior e as janelas no mesmo formato. Funções e regras do gerador não mudaram (anos, eventos, feriados, ver calendário, rascunho e publicação).
+- O ano aberto, "Quem está lançando", Gerar PDF e Publicar ficam num painel no alto; o aviso da última publicação fica logo abaixo.
+- A página de acesso não autorizado também segue o padrão (Tangará de acesso negado).
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
-- Gerador de Calendário: passar para o padrão visual do Portal (menu lateral, barra superior, painéis), sobre a versão atual.
