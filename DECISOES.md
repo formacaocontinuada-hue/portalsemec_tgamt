@@ -192,5 +192,5 @@ sistema ao trocar de tela.
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
-- Acesso do servidor: preencher em `js/servidor.js` o endereço do Apps Script público quando a SEMEC decidir abrir a entrada (previsto para janeiro de 2027).
+- Acesso do servidor: endereço do Apps Script público preenchido em `js/servidor.js` em 04/11/2026 para o teste real com uma escola; `entrar.html` continua sem link nas páginas do Portal até a abertura para a rede (previsto para janeiro de 2027).
 - "Você sabia?": a SEMEC confere os cartões de lei e marca `"conferido": true` em `dados/voce-sabia.json`.

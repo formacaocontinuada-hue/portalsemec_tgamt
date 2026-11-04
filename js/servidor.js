@@ -13,8 +13,8 @@
   "use strict";
 
   // Endereço da implantação pública "Acesso do Servidor" (termina em /exec).
-  // Vazio = entrada do servidor ainda não aberta (decisão D11: janeiro de 2027).
-  var URL_API = "";
+  // Vazio = entrada do servidor fechada ("abre em janeiro de 2027"). Preenchido em 04/11/2026 para o teste real com uma escola.
+  var URL_API = "https://script.google.com/macros/s/AKfycbxfQk-yTMqpuSz-QDxnzpBwp0JxOpjH8zkhAKmK2R4pr86C_e7zwM4GnP9mJjzSDvKbUg/exec";
 
   var CHAVE = "portalSemecServidor";
   var CHAVE_VOLTA = "portalSemecServidorVolta";
