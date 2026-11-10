@@ -110,6 +110,42 @@
     }
   }
 
+  /*
+   * Perfil da unidade (endereço, telefone, e-mail e equipe gestora).
+   * Vem do backend, só da unidade da conta que entrou. Se não carregar,
+   * a página continua com "—" e as ferramentas funcionam normalmente.
+   */
+  function carregarPerfil() {
+    if (!document.querySelector("[data-perfil]") || !acesso.perfil) return;
+    acesso.perfil().then(function (p) {
+      var valores = {
+        inep: p.inep,
+        telefone: p.contato.telefone,
+        endereco: p.contato.endereco,
+        email: p.contato.email
+      };
+      document.querySelectorAll("[data-perfil]").forEach(function (el) {
+        el.textContent = valores[el.dataset.perfil] || "Não informado";
+      });
+
+      var painel = document.querySelector("[data-perfil-gestores]");
+      var lista = document.querySelector("[data-perfil-lista]");
+      if (!painel || !lista) return;
+      lista.textContent = "";
+      p.gestores.forEach(function (g) {
+        var item = document.createElement("div");
+        var dt = document.createElement("dt");
+        var dd = document.createElement("dd");
+        dt.textContent = g.rotulo || "";
+        dd.textContent = g.nome || "";
+        item.appendChild(dt);
+        item.appendChild(dd);
+        lista.appendChild(item);
+      });
+      painel.hidden = !p.gestores.length;
+    }).catch(function () { /* sem perfil: a área segue com "—" */ });
+  }
+
   function iniciar() {
     if (!acesso) {
       mostrarPorta("entrar", "Os arquivos do Portal não carregaram. Atualize a página.");
@@ -134,6 +170,7 @@
         }
         aplicarUnidade(unidade, resultado[1]);
         mostrarArea();
+        carregarPerfil();
       })
       .catch(function (e) {
         if (e.codigo === "ACESSO_NAO_AUTORIZADO") {

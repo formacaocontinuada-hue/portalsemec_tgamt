@@ -645,6 +645,16 @@ textarea {
   margin: 2px 0 0;
   color: var(--navy);
   font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.panel .unit-meta {
+  margin-top: 0;
+}
+
+.panel-nota {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
 }
 
 .summary-strip {

@@ -179,10 +179,22 @@
     });
   }
 
+  /* Perfil da própria unidade: { contato: {endereco, telefone, email}, gestores: [{nome, rotulo}] }. */
+  function perfil() {
+    return pedir("PERFIL_UNIDADE").then(function (r) {
+      return {
+        inep: String((r.unidade && r.unidade.codigoInep) || "").trim(),
+        contato: r.contato || {},
+        gestores: Array.isArray(r.gestores) ? r.gestores : []
+      };
+    });
+  }
+
   window.PortalAcesso = Object.freeze({
     temSessao: function () { return Boolean(lerSessao()); },
     entrar: entrar,
     sair: sair,
-    identificar: identificar
+    identificar: identificar,
+    perfil: perfil
   });
 })();

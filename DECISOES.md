@@ -207,8 +207,28 @@ sistema ao trocar de tela.
 - `portal.css`: sai a seção 15 (Área do Servidor, aviso flutuante e convite do app) e o `.auth-form`; o `.check` fica, como componente geral. O "Você sabia?" sai junto (os textos não foram publicados).
 - Presença nas formações pelo QR da carteira impressa continua sendo o caminho previsto; o leitor será definido quando chegar a etapa das formações.
 
+**Formulário da carteira (10/11/2026)**
+- Sem Área do Servidor, o servidor envia pelo celular os dados e a foto da carteira por um **Google Forms da portal.semec**. A regra da Prefeitura barra acesso externo dos servidores à base; por isso o formulário **não toca na Base de Dados**: as respostas caem numa planilha separada (`RESPOSTAS_FORMULARIO_CARTEIRA`, em 01_BASES_DE_DADOS, restrita). Só a escola, pelo Quadro (acesso institucional), confere e passa para a Base. A escola continua podendo enviar a foto pela pessoa.
+- Não usar conta pessoal (Gmail) para o formulário: os dados são da Prefeitura e ficam no Drive institucional.
+- Campos: e-mail **verificado** pelo Google (a pessoa não digita), nome completo, CPF (formato conferido), data de nascimento, local de trabalho (caixa de seleção, mais de um), cargo/função e tipo de vínculo (também caixas de seleção; cada escola ajusta o do seu local na conferência), foto (envio de 1 imagem, até 10 MB), termo de ciência (obrigatório), "aceito receber avisos" (opcional) e "confirmo que revisei todos os dados e eles estão corretos" (obrigatório).
+- **Termo:** a base legal dos dados obrigatórios é a execução de políticas públicas (LGPD art. 7º, III, e art. 23), e o servidor declara ciência; consentimento só para os avisos por e-mail, que são opcionais e com descadastro em cada e-mail. Canal dos direitos: e-mail da Formação Continuada. O texto passa pela Procuradoria/encarregado de dados antes de abrir.
+- O e-mail volta a ser guardado, com finalidade escrita: envio da carteira, dos certificados (PDF anexado ou link de validação da Central, nunca link aberto do Drive) e, para quem aceitou, dos avisos.
+- Resposta do formulário sempre igual ("Recebemos… a sua escola vai conferir"), sem dizer se o CPF existe; sem resumo de respostas público.
+- Calendário: um calendário Google público "Formações SEMEC" (calendário anual + formações e eventos) que o servidor assina; sem convites individuais.
+- Ordem: formulário → conferência no Quadro e carteira → carteira em PDF por e-mail → calendário (pode vir antes) → certificados e avisos por e-mail.
+
+**Liberação da Área da Escola e revisão de segurança da Central (10/11/2026)**
+- Revisão do backend da Central (o mesmo que identifica a unidade no Portal). Já estava certo e continua: só contas @edu cadastradas e ativas em CONTAS_INSTITUCIONAIS entram; a unidade é conferida de novo a cada ação (conta tirada da planilha perde o acesso em até 10 min); a autorização vale 30 dias no navegador, o servidor guarda só o hash, e ela só volta para os endereços oficiais da Central e do Portal; escola lista só os certificados da própria unidade e busca na rede só pelo nome (duas palavras, até 50 resultados, só certificados ATIVOS); nada de CPF completo, matrícula, e-mail pessoal ou ID de arquivo vai para o navegador; textos dos e-mails escapados; visualizar, baixar e enviar ficam no histórico.
+- Corrigido em 10/11:
+  - **Limite diário de e-mails por conta** (escola 150, SEMEC 500 por dia): a cota de envio é uma só para a rede inteira (conta portal.semec); uma conta sozinha não consegue esgotá-la.
+  - **Busca na rede passa a ser registrada** no histórico (conta, termo buscado e quantos resultados), como já eram a lista, os downloads e os envios.
+  - **Ponte antiga (iframe, `Bridge.html`) retirada**: nenhuma página a usava mais desde a entrada com autorização temporária.
+- **Perfil da unidade no Início da Escola:** INEP, telefone, endereço e e-mail da unidade (aba ESCOLAS) e a equipe gestora ativa (aba GESTORES: nome e função, na ordem Direção, Coordenação pedagógica, Secretaria escolar, Orientação). Vem do backend (ação `PERFIL_UNIDADE`), só da unidade da conta que entrou; os nomes dos gestores não vão para o GitHub. Campo vazio aparece como "Não informado". Só leitura: quem corrige é a SEMEC, na planilha; a página aponta "Fale com a Formação Continuada".
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
 - Política de Privacidade: incluir a foto e a data de nascimento usadas na carteira impressa.
 - Data de nascimento em branco (antes o servidor completava no perfil): definir quem corrige e por onde.
+- Formulário da carteira: testar envio de foto a partir de conta de fora (Gmail); se o domínio bloquear, pedir ao Aroldo a liberação para a portal.semec. Termo pela Procuradoria antes de abrir.
+- Conferência dos envios do formulário no Quadro (próximo pacote).
