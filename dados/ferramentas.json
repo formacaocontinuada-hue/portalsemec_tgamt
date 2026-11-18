@@ -1,6 +1,6 @@
 {
   "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas).",
-  "atualizado_em": "2026-11-03",
+  "atualizado_em": "2026-11-18",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC"
@@ -52,6 +52,17 @@
       "mascote": "tangara-calendario",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec"
+    },
+    {
+      "id": "area-formador",
+      "areas": [
+        "semec"
+      ],
+      "nome": "Área do Formador",
+      "descricao": "As formadoras conferem os certificados do público das suas formações, abrem o PDF e pedem correção à SEMEC.",
+      "mascote": "tangara-certificados",
+      "situacao": "pronta",
+      "endereco": "formador.html"
     },
     {
       "id": "calendario-escolar",
