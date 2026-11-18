@@ -225,6 +225,18 @@ sistema ao trocar de tela.
   - **Ponte antiga (iframe, `Bridge.html`) retirada**: nenhuma página a usava mais desde a entrada com autorização temporária.
 - **Perfil da unidade no Início da Escola:** INEP, telefone, endereço e e-mail da unidade (aba ESCOLAS) e a equipe gestora ativa (aba GESTORES: nome e função, na ordem Direção, Coordenação pedagógica, Secretaria escolar, Orientação). Vem do backend (ação `PERFIL_UNIDADE`), só da unidade da conta que entrou; os nomes dos gestores não vão para o GitHub. Campo vazio aparece como "Não informado". Só leitura: quem corrige é a SEMEC, na planilha; a página aponta "Fale com a Formação Continuada".
 
+**Área do Formador (17 e 18/11/2026)**
+- As formadoras conferem os certificados do público das suas formações (emitidos, aguardando, não saíram e o motivo), abrem e baixam o PDF e pedem correção à SEMEC. É um sisteminha em Apps Script (portal.semec), separado do gerador.
+- Entram com o **e-mail @edu da própria formadora**, cadastrado na aba `FORMADORAS` da planilha Acessos. Como não são contas da SEMEC, não passam pela porta da Área da SEMEC: a Área do Formador é a **terceira porta** em "Áreas de trabalho" da página inicial (e aparece também no menu e nos cartões da SEMEC).
+- Todas as entradas apontam para `formador.html`, que leva ao app da Web. O endereço do Apps Script fica só nessa página (`ENDERECO`); vazio, ela mostra "A Área do Formador abre em breve".
+- O menu da Área do Formador mostra só o que a formadora usa: página inicial, Área do Formador, Validar certificado, Assistência e Conta.
+- O aviso de cada pedido de correção vai para a portal.semec, sem CPF.
+
+**Caminho de volta (18/11/2026)**
+- Regra: toda página, de qualquer ambiente do Portal, tem um caminho de volta visível (menu lateral ou link), sem depender do botão Voltar do navegador.
+- Conferência de 18/11 (todos os links das páginas do Portal, da Central, do Tangará Sorteia e das Áreas do Formador e do Administrador): nenhum link quebrado. Corrigido: a página pública de validação de certificados ganhou "Página inicial" no topo e no rodapé; o Tangará Sorteia ganhou o botão "Portal"; na Área do Formador, a equipe da SEMEC vê também "Início da SEMEC".
+- `componentes.html` e `componentes-entrada.html` são páginas de referência do visual, sem menu, e não têm link de nenhuma página.
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Formador | Portal SEMEC</title>
+  <meta name="description" content="Entrada da Área do Formador: as formadoras conferem os certificados do público das suas formações.">
+  <link rel="icon" href="assets/marca/emblema-portal-semec.webp" type="image/webp">
+  <link rel="stylesheet" href="css/portal.css">
+</head>
+<body>
+  <!--
+    Passagem para a Área do Formador (Apps Script).
+    O endereço fica só aqui: cole o link do app da Web em ENDERECO, abaixo.
+    Enquanto estiver vazio, a página avisa que a área ainda vai abrir.
+    A própria Área do Formador confere o e-mail @edu de quem entra.
+  -->
+  <div class="auth-page">
+    <main class="auth-main">
+      <div class="auth-shell">
+        <section class="auth-intro">
+          <span class="auth-brand">
+            <img src="assets/marca/brasao-tangara.webp" alt="Brasão de Tangará da Serra">
+            <span>
+              <strong>Prefeitura Municipal de Tangará da Serra</strong>
+              <small>SEMEC — Secretaria Municipal de Educação</small>
+            </span>
+          </span>
+          <p class="auth-kicker">Portal SEMEC</p>
+          <h2>Os certificados do público das suas formações.</h2>
+        </section>
+
+        <section class="auth-card" aria-labelledby="titulo" aria-live="polite">
+          <img class="auth-mascot" id="mascote" src="assets/mascote/tangara-carregando.webp" alt="">
+          <p class="auth-kicker">Área do Formador</p>
+          <h1 id="titulo">Abrindo a Área do Formador</h1>
+          <p id="texto">Aguarde um instante. Entre com o seu e-mail institucional (@edu.tangaradaserra.mt.gov.br).</p>
+          <a class="auth-submit" id="botao" href="#" hidden>Abrir a Área do Formador</a>
+          <div class="auth-links">
+            <a href="index.html">Página inicial</a>
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/entrar-em-contato.html">Entrar em contato</a>
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/politica-privacidade.html">Política de Privacidade</a>
+            <a href="https://formacaocontinuada-hue.github.io/central-certificados-semec/acessibilidade.html">Acessibilidade</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="auth-footer">
+      <p>Portal SEMEC — Secretaria Municipal de Educação de Tangará da Serra</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+      // Cole aqui o link do app da Web da Área do Formador (termina em /exec).
+      var ENDERECO = "";
+
+      var botao = document.getElementById("botao");
+      if (!/^https:\/\/script\.google\.com\/.+\/exec$/.test(ENDERECO)) {
+        document.getElementById("mascote").src = "assets/mascote/tangara-aguardando.webp";
+        document.getElementById("titulo").textContent = "A Área do Formador abre em breve";
+        document.getElementById("texto").textContent = "A SEMEC avisa as formadoras quando a área estiver disponível.";
+        return;
+      }
+      botao.href = ENDERECO;
+      botao.hidden = false;
+      window.setTimeout(function () { window.location.replace(ENDERECO); }, 600);
+    })();
+  </script>
+</body>
+</html>
