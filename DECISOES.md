@@ -227,9 +227,11 @@ sistema ao trocar de tela.
 
 **Área do Formador (17 e 18/11/2026)**
 - As formadoras conferem os certificados do público das suas formações (emitidos, aguardando, não saíram e o motivo), abrem e baixam o PDF e pedem correção à SEMEC. É um sisteminha em Apps Script (portal.semec), separado do gerador.
-- Entram com a **conta institucional da ilha formativa** (`formacao.xxx@`; decisão de 18/11/2026, no lugar do @edu pessoal), cadastrada na aba `FORMADORAS` da planilha Acessos. Como não são contas da SEMEC, não passam pela porta da Área da SEMEC: a Área do Formador é a **terceira porta** em "Áreas de trabalho" da página inicial (e aparece também no menu e nos cartões da SEMEC).
-- Todas as entradas apontam para `formador.html`, que leva ao app da Web. O endereço do Apps Script fica só nessa página (`ENDERECO`); vazio, ela mostra "A Área do Formador abre em breve".
-- O menu da Área do Formador mostra só o que a formadora usa: página inicial, Área do Formador, Validar certificado, Assistência e Conta.
+- Entram com a **conta institucional da ilha formativa** (`formacao.xxx@`, `educacao.especial@`, `avaliacao@`, `alfabetizamt.tga@`; decisão de 18/11/2026, no lugar do @edu pessoal), cadastrada na aba `FORMADORAS` da planilha Acessos. Como não são contas da SEMEC, não passam pela porta da Área da SEMEC: a Área do Formador é a **terceira porta** em "Áreas de trabalho" da página inicial (e aparece também no menu e nos cartões da SEMEC).
+- Todas as entradas apontam para `formador.html` (início da área, ver abaixo); o cartão "Certificados do seu público" leva ao app da Web.
+- Ao entrar, a pessoa escolhe o próprio nome em "Quem está acessando?" (aba GESTORES, funções FORMADOR e EQUIPE_SEMEC da SEMEC); o nome vai para os logs e para o pedido.
+- Formações: Etapa 1, Alfabetiza MT (1º/2º, 3º ao 5º, Campo, Trilha), ProLEEI, palestras da Etapa 3 e SITAVE. O Alfabetiza 3º ao 5º é emitido pela SEMEC e aparece para a conta Anos Iniciais II (18/11/2026).
+- Etapa 1: lista completa para toda conta cadastrada, com filtro por situação, unidade e nome (18/11/2026; antes era só pesquisa por nome). A tela abre primeiro a formação da própria ilha. O CPF não aparece, nem mascarado.
 - O aviso de cada pedido de correção vai para a portal.semec, sem CPF.
 
 **Caminho de volta (18/11/2026)**
