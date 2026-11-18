@@ -3,7 +3,8 @@
   "atualizado_em": "2026-11-18",
   "areas": {
     "escola": "Área da Escola",
-    "semec": "Área da SEMEC"
+    "semec": "Área da SEMEC",
+    "formador": "Área do Formador"
   },
   "ferramentas": [
     {
@@ -59,10 +60,43 @@
         "semec"
       ],
       "nome": "Área do Formador",
-      "descricao": "As formadoras conferem os certificados do público das suas formações, abrem o PDF e pedem correção à SEMEC.",
+      "descricao": "Área de trabalho das ilhas formativas: certificados do público, calendário e validação.",
       "mascote": "tangara-certificados",
       "situacao": "pronta",
       "endereco": "formador.html"
+    },
+    {
+      "id": "certificados-publico",
+      "areas": [
+        "formador"
+      ],
+      "nome": "Certificados do seu público",
+      "descricao": "Ver quem já recebeu, quem ainda vai receber e quem não saiu (com o motivo), abrir o PDF e pedir correção à SEMEC.",
+      "mascote": "tangara-certificados",
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec"
+    },
+    {
+      "id": "calendario-escolar-formador",
+      "areas": [
+        "formador"
+      ],
+      "nome": "Calendário Escolar",
+      "descricao": "Ver e baixar o calendário escolar da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
+      "mascote": "tangara-calendario",
+      "situacao": "pronta",
+      "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno"
+    },
+    {
+      "id": "validar-certificado",
+      "areas": [
+        "formador"
+      ],
+      "nome": "Validar certificado",
+      "descricao": "Conferir a autenticidade de um certificado da SEMEC pelo QR Code ou pelo link impresso nele.",
+      "mascote": "tangara-consulta-certificados",
+      "situacao": "pronta",
+      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
     },
     {
       "id": "area-administrador",
@@ -102,7 +136,8 @@
       "id": "tangara-sorteia",
       "areas": [
         "escola",
-        "semec"
+        "semec",
+        "formador"
       ],
       "grupo": "adicional",
       "nome": "Tangará Sorteia",

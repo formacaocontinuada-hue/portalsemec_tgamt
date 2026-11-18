@@ -239,6 +239,8 @@ sistema ao trocar de tela.
 
 - **Área do Administrador (18/11/2026):** atalho no menu e nos cartões da Área da SEMEC (não na página inicial pública). Só a portal.semec entra; as outras contas veem "acesso não autorizado".
 
+- **Início da Área do Formador (18/11/2026):** `formador.html` passa a ser a área de trabalho do formador, no mesmo padrão das áreas da Escola e da SEMEC (menu lateral, barra superior e cartões). Abre sem login; cada ferramenta confere a conta da ilha ao abrir. Ferramentas: Certificados do seu público, Calendário Escolar (pasta publicada no Drive, porque a página `calendario.html` só abre para escola e SEMEC), Validar certificado e, em Funções adicionais, o Tangará Sorteia.
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
