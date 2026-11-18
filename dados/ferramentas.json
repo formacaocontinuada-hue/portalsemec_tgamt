@@ -65,6 +65,17 @@
       "endereco": "formador.html"
     },
     {
+      "id": "area-administrador",
+      "areas": [
+        "semec"
+      ],
+      "nome": "Área do Administrador",
+      "descricao": "Fila de geração dos certificados, não gerados, reemissão e pedidos das formadoras. Só a administração do Portal entra.",
+      "mascote": "tangara-gerador-certificados",
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec"
+    },
+    {
       "id": "calendario-escolar",
       "areas": [
         "escola"

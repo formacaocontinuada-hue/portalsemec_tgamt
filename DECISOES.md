@@ -237,6 +237,8 @@ sistema ao trocar de tela.
 - Conferência de 18/11 (todos os links das páginas do Portal, da Central, do Tangará Sorteia e das Áreas do Formador e do Administrador): nenhum link quebrado. Corrigido: a página pública de validação de certificados ganhou "Página inicial" no topo e no rodapé; o Tangará Sorteia ganhou o botão "Portal"; na Área do Formador, a equipe da SEMEC vê também "Início da SEMEC".
 - `componentes.html` e `componentes-entrada.html` são páginas de referência do visual, sem menu, e não têm link de nenhuma página.
 
+- **Área do Administrador (18/11/2026):** atalho no menu e nos cartões da Área da SEMEC (não na página inicial pública). Só a portal.semec entra; as outras contas veem "acesso não autorizado".
+
 ## Pendências
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
