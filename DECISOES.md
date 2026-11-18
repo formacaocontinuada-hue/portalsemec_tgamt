@@ -227,7 +227,7 @@ sistema ao trocar de tela.
 
 **Área do Formador (17 e 18/11/2026)**
 - As formadoras conferem os certificados do público das suas formações (emitidos, aguardando, não saíram e o motivo), abrem e baixam o PDF e pedem correção à SEMEC. É um sisteminha em Apps Script (portal.semec), separado do gerador.
-- Entram com o **e-mail @edu da própria formadora**, cadastrado na aba `FORMADORAS` da planilha Acessos. Como não são contas da SEMEC, não passam pela porta da Área da SEMEC: a Área do Formador é a **terceira porta** em "Áreas de trabalho" da página inicial (e aparece também no menu e nos cartões da SEMEC).
+- Entram com a **conta institucional da ilha formativa** (`formacao.xxx@`; decisão de 18/11/2026, no lugar do @edu pessoal), cadastrada na aba `FORMADORAS` da planilha Acessos. Como não são contas da SEMEC, não passam pela porta da Área da SEMEC: a Área do Formador é a **terceira porta** em "Áreas de trabalho" da página inicial (e aparece também no menu e nos cartões da SEMEC).
 - Todas as entradas apontam para `formador.html`, que leva ao app da Web. O endereço do Apps Script fica só nessa página (`ENDERECO`); vazio, ela mostra "A Área do Formador abre em breve".
 - O menu da Área do Formador mostra só o que a formadora usa: página inicial, Área do Formador, Validar certificado, Assistência e Conta.
 - O aviso de cada pedido de correção vai para a portal.semec, sem CPF.
