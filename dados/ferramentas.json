@@ -70,10 +70,10 @@
       "areas": [
         "formador"
       ],
-      "nome": "Certificados do seu público",
+      "nome": "Eventos e certificados",
       "descricao": "Ver quem já recebeu, quem ainda vai receber e quem não saiu (com o motivo), abrir o PDF e pedir correção à SEMEC.",
       "mascote": "tangara-certificados",
-      "situacao": "pronta",
+      "situacao": "manutencao",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec"
     },
     {

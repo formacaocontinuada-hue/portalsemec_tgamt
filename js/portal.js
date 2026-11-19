@@ -47,6 +47,7 @@
   var STATUS = {
     "pronta": { label: "Disponível", className: "pill-ok" },
     "em-construcao": { label: "Em construção", className: "pill-waiting" },
+    "manutencao": { label: "Em manutenção", className: "pill-waiting" },
     "planejada": { label: "Em breve", className: "pill-muted" }
   };
 
