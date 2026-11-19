@@ -37,11 +37,10 @@
         "semec"
       ],
       "nome": "Gerador de Certificados",
-      "descricao": "Emitir certificados das formações em lote a partir da planilha da formação.",
+      "descricao": "Montar a ficha de cada formação (encontros e listas de presença), conferir as horas, ver a prévia e gerar os certificados. Só a administração entra.",
       "mascote": "tangara-gerador-certificados",
-      "situacao": "planejada",
-      "endereco": "",
-      "pendencia": "Sisteminha ainda não construído."
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=gerador"
     },
     {
       "id": "gerador-calendario-escolar",
