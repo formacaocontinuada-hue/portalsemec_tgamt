@@ -1,6 +1,6 @@
 {
   "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas).",
-  "atualizado_em": "2026-11-18",
+  "atualizado_em": "2026-11-19",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC",
@@ -73,8 +73,19 @@
       "nome": "Eventos e certificados",
       "descricao": "Ver quem já recebeu, quem ainda vai receber e quem não saiu (com o motivo), abrir o PDF e pedir correção à SEMEC.",
       "mascote": "tangara-certificados",
-      "situacao": "manutencao",
+      "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec"
+    },
+    {
+      "id": "pedir-certificado",
+      "areas": [
+        "formador"
+      ],
+      "nome": "Pedir certificado de um evento",
+      "descricao": "Pedir à SEMEC a geração do certificado de um evento em 4 passos, conferir o link da lista de presença e acompanhar o pedido.",
+      "mascote": "tangara-gerador-certificados",
+      "situacao": "em-construcao",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec?tela=pedir"
     },
     {
       "id": "calendario-escolar-formador",
