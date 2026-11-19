@@ -70,8 +70,8 @@
       "areas": [
         "formador"
       ],
-      "nome": "Eventos e certificados",
-      "descricao": "Ver quem já recebeu, quem ainda vai receber e quem não saiu (com o motivo), abrir o PDF e pedir correção à SEMEC.",
+      "nome": "Certificados gerados",
+      "descricao": "Todos os eventos que já têm certificado, com data, carga horária e para quem é. Ver quem recebeu, procurar uma pessoa, abrir o PDF e pedir correção.",
       "mascote": "tangara-certificados",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec"
@@ -84,7 +84,7 @@
       "nome": "Pedir certificado de um evento",
       "descricao": "Pedir à SEMEC a geração do certificado de um evento em 4 passos, conferir o link da lista de presença e acompanhar o pedido.",
       "mascote": "tangara-gerador-certificados",
-      "situacao": "em-construcao",
+      "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec?tela=pedir"
     },
     {
