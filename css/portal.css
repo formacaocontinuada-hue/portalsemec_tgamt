@@ -1381,3 +1381,39 @@ a.tool-card:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Aviso amigável de manutenção (Área do Formador, 19/11/2026) ----------- */
+.manut-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 8px;
+  border: 1px solid rgba(190, 211, 236, 0.8);
+  border-radius: 16px;
+  background: var(--surface);
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(6, 42, 90, 0.08);
+}
+.manut-card h2 { margin: 0 0 10px; color: var(--navy); line-height: 1.25; }
+.manut-card p { margin: 0 0 10px; color: #36506f; line-height: 1.5; }
+.manut-card .kicker { margin: 0 0 4px; }
+.manut-mascote { width: 140px; max-width: 45%; height: auto; }
+.manut-tranquilo {
+  margin: 12px 0 16px;
+  padding: 12px 14px 12px 32px;
+  border-radius: 10px;
+  background: #eef7f1;
+  color: #1d5b36;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: left;
+}
+.manut-acoes { display: grid; gap: 10px; }
+.manut-acoes .button { width: 100%; justify-content: center; white-space: normal; }
+@media (min-width: 760px) {
+  .manut-card { grid-template-columns: 170px minmax(0, 1fr); justify-items: start; text-align: left; padding: 26px; }
+  .manut-mascote { width: 170px; max-width: none; align-self: center; }
+  .manut-acoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
