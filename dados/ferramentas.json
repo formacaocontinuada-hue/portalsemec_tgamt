@@ -157,18 +157,18 @@
       "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/"
     },
     {
-      "id": "calculadora-etapa1",
+      "id": "calculadora-formacao",
       "areas": [
         "escola",
         "semec",
         "formador"
       ],
       "grupo": "adicional",
-      "nome": "Calculadora da Etapa I",
-      "descricao": "O professor escolhe o grupo, digita as horas dos certificados e vê o percentual da Etapa I pela IN 005/2026.",
+      "nome": "Calculadora da Formação",
+      "descricao": "O professor simula os pontos da formação continuada: Etapa I, Etapa II, palestras, seminários e coordenação.",
       "mascote": "tangara-calculadora",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/calculadora-etapa1/"
+      "endereco": "https://formacaocontinuada-hue.github.io/calculadora-formacao/"
     }
   ],
   "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
