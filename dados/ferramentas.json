@@ -1,6 +1,6 @@
 {
   "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas).",
-  "atualizado_em": "2026-11-19",
+  "atualizado_em": "2026-11-24",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC",
@@ -155,6 +155,20 @@
       "mascote": "tangara-sorteia",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/"
+    },
+    {
+      "id": "calculadora-etapa1",
+      "areas": [
+        "escola",
+        "semec",
+        "formador"
+      ],
+      "grupo": "adicional",
+      "nome": "Calculadora da Etapa I",
+      "descricao": "O professor escolhe o grupo, digita as horas dos certificados e vê o percentual da Etapa I pela IN 005/2026.",
+      "mascote": "tangara-calculadora",
+      "situacao": "pronta",
+      "endereco": "https://formacaocontinuada-hue.github.io/calculadora-etapa1/"
     }
   ],
   "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
