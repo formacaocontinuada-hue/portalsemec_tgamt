@@ -1,5 +1,5 @@
 {
-  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas). Abas: tudo do Portal abre na mesma aba (cada sistema tem caminho de volta); novaAba: true só para o que não tem volta (pasta do Drive, Quadro, Gerador de Calendário). levaDe: true acrescenta ?de=<área> ao endereço, para o botão Voltar do sistema levar à mesma área.",
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas). Abas: tudo do Portal abre na mesma aba (cada sistema tem caminho de volta); novaAba: true só para o que não tem volta (pasta do Drive). levaDe: true acrescenta ?de=<área> ao endereço, para o botão Voltar do sistema levar à mesma área.",
   "atualizado_em": "2026-11-25",
   "areas": {
     "escola": "Área da Escola",
@@ -29,8 +29,7 @@
       "descricao": "Ver quem atua na escola, incluir quem está faltando e marcar quem não atua mais.",
       "mascote": "tangara-quadro-servidores",
       "situacao": "pronta",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec",
-      "novaAba": true
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec"
     },
     {
       "id": "gerador-certificados-2026",
@@ -52,8 +51,7 @@
       "descricao": "Lançar os dias, conferir os dias letivos e publicar para as escolas os calendários da Educação Infantil e do Ensino Fundamental.",
       "mascote": "tangara-gerador-calendario",
       "situacao": "pronta",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec",
-      "novaAba": true
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec"
     },
     {
       "id": "area-formador",

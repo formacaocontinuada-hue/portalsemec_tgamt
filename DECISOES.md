@@ -247,12 +247,11 @@ sistema ao trocar de tela.
 
 - **Caminho de ida e volta (25/11/2026):** regra única para todos os sistemas do Portal.
   - Tudo do Portal abre **na mesma aba**: páginas do Portal, Central de Certificados, Área do Formador, Área do Administrador, Tangará Sorteia e Calculadora. Cada um tem caminho de volta.
-  - Só abre **em outra aba** o que não tem volta: pasta do Drive, redes sociais, 1Doc, PDFs, Quadro de servidores e Gerador de Calendário (marcados com `novaAba` em `dados/ferramentas.json`).
+  - Só abre **em outra aba** o que não tem volta: pasta do Drive, redes sociais, 1Doc e PDFs (`novaAba` em `dados/ferramentas.json`). Quadro de servidores e Gerador de Calendário também têm menu com volta e abrem na mesma aba.
   - **`?de=escola|semec|formador|publico`**: o link leva o nome da área (nada de dado pessoal). Sorteia e Calculadora mostram "Voltar para a Área da…". A Central mostra o menu do Formador (`de=formador`) ou só as informações (`de=publico`); sem `?de=`, segue o menu da conta (escola ou SEMEC).
   - Os menus da Central, da Área do Formador e da Área do Administrador repetem os itens da área de origem, incluindo Funções adicionais (Sorteia e Calculadora) e Assistência.
 
 ## Pendências
-- Quadro de servidores e Gerador de Calendário: conferir se têm link de volta ao Portal; se tiverem, passam a abrir na mesma aba.
 - Endereços publicados das ferramentas (ver campo `pendencia` em `dados/ferramentas.json`).
 - Logística: quais ferramentas entram.
 - Política de Privacidade: incluir a foto e a data de nascimento usadas na carteira impressa.
