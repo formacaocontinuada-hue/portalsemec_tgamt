@@ -17,7 +17,8 @@
       "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
       "mascote": "tangara-central-certificados",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
+      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/",
+      "mesmaAba": true
     },
     {
       "id": "quadro-servidores",
@@ -36,11 +37,11 @@
       "areas": [
         "semec"
       ],
-      "nome": "Gerador de Certificados",
-      "descricao": "Montar a ficha de cada formação (encontros e listas de presença), conferir as horas, ver a prévia e gerar os certificados. Só a administração entra.",
+      "nome": "Gerar certificados de um evento",
+      "descricao": "Lista de presença, dados do evento e conferência com a Base: os certificados saem pela fila. Também lança eventos na Etapa I.",
       "mascote": "tangara-gerador-certificados-2026",
       "situacao": "pronta",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=gerador"
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=evento"
     },
     {
       "id": "gerador-calendario-escolar",

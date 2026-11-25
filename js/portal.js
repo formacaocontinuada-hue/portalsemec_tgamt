@@ -67,7 +67,8 @@
 
     if (usable) {
       card.href = tool.endereco;
-      if (/^https?:/i.test(tool.endereco)) {
+      // Abre em outra aba o que é externo; a Central (mesmo menu do Portal, com caminho de volta) abre na mesma.
+      if (/^https?:/i.test(tool.endereco) && !tool.mesmaAba) {
         card.target = "_blank";
         card.rel = "noopener";
       }
