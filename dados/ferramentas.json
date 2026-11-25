@@ -1,6 +1,6 @@
 {
-  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas).",
-  "atualizado_em": "2026-11-24",
+  "_leia": "Lista única de ferramentas do Portal SEMEC. Cada item vira um cartão em cada área listada em 'areas'. Cada cartão mostra o Tangará indicado em mascote (arquivo em assets/mascote). Para incluir um sisteminha novo, acrescente um item. situacao: pronta | em-construcao | planejada. Um cartão só vira link quando a situação é 'pronta' e o endereço está preenchido. grupo: 'adicional' coloca o cartão na seção Funções adicionais (sem o campo, fica em Ferramentas). Abas: tudo do Portal abre na mesma aba (cada sistema tem caminho de volta); novaAba: true só para o que não tem volta (pasta do Drive, Quadro, Gerador de Calendário). levaDe: true acrescenta ?de=<área> ao endereço, para o botão Voltar do sistema levar à mesma área.",
+  "atualizado_em": "2026-11-25",
   "areas": {
     "escola": "Área da Escola",
     "semec": "Área da SEMEC",
@@ -17,8 +17,7 @@
       "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
       "mascote": "tangara-central-certificados",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/",
-      "mesmaAba": true
+      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
     },
     {
       "id": "quadro-servidores",
@@ -30,7 +29,8 @@
       "descricao": "Ver quem atua na escola, incluir quem está faltando e marcar quem não atua mais.",
       "mascote": "tangara-quadro-servidores",
       "situacao": "pronta",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec"
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec",
+      "novaAba": true
     },
     {
       "id": "gerador-certificados-2026",
@@ -52,7 +52,8 @@
       "descricao": "Lançar os dias, conferir os dias letivos e publicar para as escolas os calendários da Educação Infantil e do Ensino Fundamental.",
       "mascote": "tangara-gerador-calendario",
       "situacao": "pronta",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec"
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec",
+      "novaAba": true
     },
     {
       "id": "area-formador",
@@ -88,6 +89,17 @@
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=evento"
     },
     {
+      "id": "correcoes-grupo",
+      "areas": [
+        "formador"
+      ],
+      "nome": "Correções do meu grupo",
+      "descricao": "Pedidos de correção que as escolas mandaram para o seu grupo. Conferir a lista de presença, corrigir ou responder.",
+      "mascote": "tangara-consulta-certificados",
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec?tela=caixa"
+    },
+    {
       "id": "calendario-escolar-formador",
       "areas": [
         "formador"
@@ -96,7 +108,8 @@
       "descricao": "Ver e baixar o calendário escolar da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
       "mascote": "tangara-calendario-escolar",
       "situacao": "pronta",
-      "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno"
+      "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno",
+      "novaAba": true
     },
     {
       "id": "validar-certificado",
@@ -107,7 +120,8 @@
       "descricao": "Conferir a autenticidade de um certificado da SEMEC pelo QR Code ou pelo link impresso nele.",
       "mascote": "tangara-validar-certificado",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
+      "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html",
+      "levaDe": true
     },
     {
       "id": "area-administrador",
@@ -155,7 +169,8 @@
       "descricao": "Bingo e sorteios para os eventos da escola, com o Tangará animando cada rodada.",
       "mascote": "tangara-sorteia-novo",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/"
+      "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/",
+      "levaDe": true
     },
     {
       "id": "calculadora-etapa1",
@@ -169,7 +184,8 @@
       "descricao": "O professor escolhe o grupo, digita as horas dos certificados e vê o percentual da Etapa I pela IN 005/2026.",
       "mascote": "tangara-calculadora",
       "situacao": "pronta",
-      "endereco": "https://formacaocontinuada-hue.github.io/calculadora-etapa1/"
+      "endereco": "https://formacaocontinuada-hue.github.io/calculadora-etapa1/",
+      "levaDe": true
     }
   ],
   "validacao_publica": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"

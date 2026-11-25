@@ -60,15 +60,27 @@
     return node;
   }
 
-  function buildCard(tool) {
+  /** ?de=<área>: o sistema de destino mostra o botão Voltar para a mesma área. */
+  function comArea(endereco, area) {
+    try {
+      var u = new URL(endereco, window.location.href);
+      u.searchParams.set("de", area);
+      return u.href;
+    } catch (e) {
+      return endereco;
+    }
+  }
+
+  function buildCard(tool, area) {
     var status = STATUS[tool.situacao] || STATUS.planejada;
     var usable = tool.situacao === "pronta" && tool.endereco;
     var card = el(usable ? "a" : "div", "tool-card");
 
     if (usable) {
-      card.href = tool.endereco;
-      // Abre em outra aba o que é externo; a Central (mesmo menu do Portal, com caminho de volta) abre na mesma.
-      if (/^https?:/i.test(tool.endereco) && !tool.mesmaAba) {
+      card.href = tool.levaDe && area ? comArea(tool.endereco, area) : tool.endereco;
+      // Tudo do Portal abre na mesma aba (cada sistema tem caminho de volta).
+      // Só abre em outra aba o que não tem volta (novaAba no dados/ferramentas.json).
+      if (tool.novaAba) {
         card.target = "_blank";
         card.rel = "noopener";
       }
@@ -105,7 +117,7 @@
             return (tool.areas || []).indexOf(grid.dataset.area) !== -1 && (tool.grupo || "principal") === grupo;
           });
           grid.innerHTML = "";
-          lista.forEach(function (tool) { grid.appendChild(buildCard(tool)); });
+          lista.forEach(function (tool) { grid.appendChild(buildCard(tool, grid.dataset.area)); });
           // seção sem nenhum cartão (ex.: Funções adicionais) não aparece
           var secao = grid.previousElementSibling;
           if (grupo !== "principal" && secao && secao.matches("[data-secao-grupo]")) secao.hidden = !lista.length;
