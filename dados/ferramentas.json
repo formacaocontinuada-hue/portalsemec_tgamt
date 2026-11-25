@@ -80,11 +80,11 @@
       "areas": [
         "formador"
       ],
-      "nome": "Pedir certificado de um evento",
-      "descricao": "Pedir à SEMEC a geração do certificado de um evento em 4 passos, conferir o link da lista de presença e acompanhar o pedido.",
+      "nome": "Gerar certificados de um evento",
+      "descricao": "Gerar os certificados de um evento em 3 passos: lista de presença, dados do evento e conferência. Sai 1 certificado de prova antes de liberar todos.",
       "mascote": "tangara-gerador-certificados",
-      "situacao": "em-construcao",
-      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec?tela=pedir"
+      "situacao": "pronta",
+      "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=evento"
     },
     {
       "id": "calendario-escolar-formador",
