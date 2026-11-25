@@ -15,7 +15,7 @@
       ],
       "nome": "Central de Certificados",
       "descricao": "Consultar, visualizar e baixar os certificados dos servidores e gerar o relatório anual.",
-      "mascote": "tangara-consulta-certificados",
+      "mascote": "tangara-central-certificados",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/"
     },
@@ -27,7 +27,7 @@
       ],
       "nome": "Quadro de servidores",
       "descricao": "Ver quem atua na escola, incluir quem está faltando e marcar quem não atua mais.",
-      "mascote": "tangara-quadro",
+      "mascote": "tangara-quadro-servidores",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbzumsOhienpriMj203mudAPjraGwO1_xe8F3ZutcN-skfU3K3jpUY2nvHsfmuCCDF3_dw/exec"
     },
@@ -38,7 +38,7 @@
       ],
       "nome": "Gerador de Certificados",
       "descricao": "Montar a ficha de cada formação (encontros e listas de presença), conferir as horas, ver a prévia e gerar os certificados. Só a administração entra.",
-      "mascote": "tangara-gerador-certificados",
+      "mascote": "tangara-gerador-certificados-2026",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=gerador"
     },
@@ -49,7 +49,7 @@
       ],
       "nome": "Gerador de Calendário Escolar",
       "descricao": "Lançar os dias, conferir os dias letivos e publicar para as escolas os calendários da Educação Infantil e do Ensino Fundamental.",
-      "mascote": "tangara-calendario",
+      "mascote": "tangara-gerador-calendario",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwasIQGHfuKFS9zlfo5iAREdpAFfWDIMO6jCYn1LVoOnVvfXzui8xbe-nSWyOEWgVIB/exec"
     },
@@ -60,7 +60,7 @@
       ],
       "nome": "Área do Formador",
       "descricao": "Área de trabalho das ilhas formativas: certificados do público, calendário e validação.",
-      "mascote": "tangara-certificados",
+      "mascote": "tangara-area-formador",
       "situacao": "pronta",
       "endereco": "formador.html"
     },
@@ -71,7 +71,7 @@
       ],
       "nome": "Certificados gerados",
       "descricao": "Todos os eventos que já têm certificado, com data, carga horária e para quem é. Ver quem recebeu, procurar uma pessoa, abrir o PDF e pedir correção.",
-      "mascote": "tangara-certificados",
+      "mascote": "tangara-certificados-gerados",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwkUtTzOueOtOcd8ygmNj5_ojuWpq5Ga5sMVRsgke48nu8tdvNj5ISU06x4ScUqJoKf/exec"
     },
@@ -82,7 +82,7 @@
       ],
       "nome": "Gerar certificados de um evento",
       "descricao": "Gerar os certificados de um evento em 3 passos: lista de presença, dados do evento e conferência. Sai 1 certificado de prova antes de liberar todos.",
-      "mascote": "tangara-gerador-certificados",
+      "mascote": "tangara-gerar-evento",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec?tela=evento"
     },
@@ -93,7 +93,7 @@
       ],
       "nome": "Calendário Escolar",
       "descricao": "Ver e baixar o calendário escolar da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
-      "mascote": "tangara-calendario",
+      "mascote": "tangara-calendario-escolar",
       "situacao": "pronta",
       "endereco": "https://drive.google.com/drive/folders/1-2-Jfh7H1Fpz0_MdMpu26g_z9bjVDEno"
     },
@@ -104,7 +104,7 @@
       ],
       "nome": "Validar certificado",
       "descricao": "Conferir a autenticidade de um certificado da SEMEC pelo QR Code ou pelo link impresso nele.",
-      "mascote": "tangara-consulta-certificados",
+      "mascote": "tangara-validar-certificado",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/central-certificados-semec/validar-certificado.html"
     },
@@ -115,7 +115,7 @@
       ],
       "nome": "Área do Administrador",
       "descricao": "Fila de geração dos certificados, não gerados, reemissão e pedidos das formadoras. Só a administração do Portal entra.",
-      "mascote": "tangara-gerador-certificados",
+      "mascote": "tangara-area-administrador",
       "situacao": "pronta",
       "endereco": "https://script.google.com/a/macros/edu.tangaradaserra.mt.gov.br/s/AKfycbwHRyY3rusynNpVf6PE1_JzXTca9-o8BG9WMfubRR_HABe8bqDoiIS0uqX7zT0Kg4LYbQ/exec"
     },
@@ -126,7 +126,7 @@
       ],
       "nome": "Calendário Escolar",
       "descricao": "Ver e baixar o calendário escolar do ano, da Educação Infantil e do Ensino Fundamental, na versão publicada pela SEMEC.",
-      "mascote": "tangara-calendario",
+      "mascote": "tangara-calendario-escolar",
       "situacao": "pronta",
       "endereco": "calendario.html"
     },
@@ -137,7 +137,7 @@
       ],
       "nome": "Tangará em Dados",
       "descricao": "Indicadores e informações da Rede Municipal de Ensino.",
-      "mascote": "tangara-indicadores",
+      "mascote": "tangara-em-dados",
       "situacao": "planejada",
       "endereco": "",
       "pendencia": "Sisteminha ainda não construído."
@@ -152,7 +152,7 @@
       "grupo": "adicional",
       "nome": "Tangará Sorteia",
       "descricao": "Bingo e sorteios para os eventos da escola, com o Tangará animando cada rodada.",
-      "mascote": "tangara-sorteia",
+      "mascote": "tangara-sorteia-novo",
       "situacao": "pronta",
       "endereco": "https://formacaocontinuada-hue.github.io/tangara-sorteia/"
     },
